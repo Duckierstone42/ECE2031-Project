@@ -26,7 +26,7 @@ ENTITY ExternalMemory IS
 END ExternalMemory;
 
 ARCHITECTURE a OF ExternalMemory IS
-    SIGNAL ADDRESS : STD_LOGIC_VECTOR(15 DOWNTO 0); --Now a 11 bit address register
+    SIGNAL ADDRESS : STD_LOGIC_VECTOR(15 DOWNTO 0); --Now a 16 bit address register
 	 SIGNAL TEMP_DATA     : STD_LOGIC_VECTOR(15 DOWNTO 0); -- 16-bit data output from memory
     BEGIN
 
@@ -61,7 +61,7 @@ ARCHITECTURE a OF ExternalMemory IS
 		
 	)
 	PORT MAP (
-		wren_a    => SCOMP_OUT AND CS_DATA,
+		wren_a    => NOT(SCOMP_OUT) AND CS_DATA, --SCOMP_IN means the IO_DEVICE writes
 		clock0    => clock,
 		address_a => ADDRESS,
 		data_a    => IO_DATA,
@@ -77,19 +77,7 @@ ARCHITECTURE a OF ExternalMemory IS
 					ADDRESS <= IO_DATA; --Save address in data register
 				END IF;
 				
---				IF CS_DATA = '1' THEN
---					IF SCOMP_OUT = '1' THEN
---					
---					END IF;
---				
---				END IF;
-					
---            IF SCOMP_OUT = '1' THEN -- If SCOMP is writing, its giving out the data address,
---                SAVED <= IO_DATA;  -- sample the input on the rising edge of CS
---				ELSE --If SCOMP reading
-				
---            END IF;
-			END IF;
+		  END IF;
     END PROCESS;
 
 END a;

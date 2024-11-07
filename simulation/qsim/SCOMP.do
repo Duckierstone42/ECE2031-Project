@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vcom -work work SCOMP.vho
-vcom -work work SCOMP_test.vwf.vht
+vcom -work work base_waveform.vwf.vht
 vsim  -c -t 1ps -L cyclonev -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.SCOMP_System_vhd_vec_tst
 vcd file -direction SCOMP.msim.vcd
 vcd add -internal SCOMP_System_vhd_vec_tst/*
@@ -15,3 +15,4 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+

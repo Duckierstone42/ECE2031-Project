@@ -1,5 +1,5 @@
 Flow report for SCOMP
-Sat Nov 02 22:48:40 2024
+Wed Nov 06 20:10:13 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sat Nov 02 22:48:40 2024       ;
+; Flow Status                     ; Successful - Wed Nov 06 20:10:13 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; SCOMP                                       ;
 ; Top-level Entity Name           ; SCOMP_System                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSXFC6D6F31C6                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 598 / 41,910 ( 1 % )                        ;
-; Total registers                 ; 801                                         ;
-; Total pins                      ; 69 / 499 ( 14 % )                           ;
+; Logic utilization (in ALMs)     ; 601 / 41,910 ( 1 % )                        ;
+; Total registers                 ; 797                                         ;
+; Total pins                      ; 95 / 499 ( 19 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 1,093,632 / 5,662,720 ( 19 % )              ;
 ; Total DSP Blocks                ; 0 / 112 ( 0 % )                             ;
@@ -68,7 +68,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/02/2024 22:35:03 ;
+; Start date & time ; 11/06/2024 20:06:06 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; SCOMP               ;
 +-------------------+---------------------+
@@ -80,7 +80,7 @@ https://fpgasoftware.intel.com/eula.
 ; Assignment Name                     ; Value                                                  ; Default Value ; Entity Name  ; Section Id                        ;
 +-------------------------------------+--------------------------------------------------------+---------------+--------------+-----------------------------------+
 ; ADVANCED_PHYSICAL_OPTIMIZATION      ; Off                                                    ; On            ; --           ; --                                ;
-; COMPILER_SIGNATURE_ID               ; 4681964410516.173060130314636                          ; --            ; --           ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 4681964410516.173094156500308                          ; --            ; --           ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --           ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --           ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                                    ; --            ; --           ; eda_board_design_signal_integrity ;
@@ -146,16 +146,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:27     ; 1.0                     ; 4986 MB             ; 00:00:28                           ;
-; Fitter               ; 00:00:56     ; 1.3                     ; 7398 MB             ; 00:01:01                           ;
-; Assembler            ; 00:00:12     ; 1.0                     ; 4888 MB             ; 00:00:05                           ;
-; Timing Analyzer      ; 00:00:10     ; 2.3                     ; 5393 MB             ; 00:00:14                           ;
-; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4853 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4739 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4856 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4739 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4856 MB             ; 00:00:02                           ;
-; Total                ; 00:01:54     ; --                      ; --                  ; 00:01:54                           ;
+; Analysis & Synthesis ; 00:00:50     ; 1.0                     ; 4999 MB             ; 00:00:45                           ;
+; Fitter               ; 00:01:50     ; 1.3                     ; 7400 MB             ; 00:01:31                           ;
+; Assembler            ; 00:00:17     ; 1.0                     ; 4892 MB             ; 00:00:07                           ;
+; Timing Analyzer      ; 00:00:22     ; 2.2                     ; 5395 MB             ; 00:00:23                           ;
+; EDA Netlist Writer   ; 00:00:06     ; 1.0                     ; 4854 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4740 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:05     ; 1.0                     ; 4856 MB             ; 00:00:02                           ;
+; Total                ; 00:03:32     ; --                      ; --                  ; 00:02:51                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -171,8 +169,6 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; LAPTOP-RVBT0RUV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-RVBT0RUV  ; Windows 10 ; 10.0       ; x86_64         ;
 ; EDA Netlist Writer   ; LAPTOP-RVBT0RUV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-RVBT0RUV  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; LAPTOP-RVBT0RUV  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 
@@ -184,9 +180,7 @@ quartus_fit --read_settings_files=off --write_settings_files=off SCOMP -c SCOMP
 quartus_asm --read_settings_files=off --write_settings_files=off SCOMP -c SCOMP
 quartus_sta SCOMP -c SCOMP
 quartus_eda --read_settings_files=off --write_settings_files=off SCOMP -c SCOMP
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SCOMP -c SCOMP --vector_source="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP_test.vwf" --testbench_file="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/simulation/qsim/SCOMP_test.vwf.vht"
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/simulation/qsim/" SCOMP -c SCOMP
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SCOMP -c SCOMP --vector_source="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP_test.vwf" --testbench_file="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/simulation/qsim/SCOMP_test.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off SCOMP -c SCOMP --vector_source="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/base_waveform.vwf" --testbench_file="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/simulation/qsim/base_waveform.vwf.vht"
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/simulation/qsim/" SCOMP -c SCOMP
 
 

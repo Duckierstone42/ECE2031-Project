@@ -4,6 +4,114 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "dbg_AC[15]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[14]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[13]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[12]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[11]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_AC[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[10]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[9]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[8]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[7]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dbg_PC[0]",
+					"strict" : false
+				},
+				{
 					"name" : "HEX0[6]",
 					"strict" : false
 				},
@@ -212,39 +320,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[0]",
+					"name" : "clock_50",
 					"strict" : false
 				},
 				{
-					"name" : "clock_51",
-					"strict" : false
-				},
-				{
-					"name" : "SW[1]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[2]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[3]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[4]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[5]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[6]",
-					"strict" : false
-				},
-				{
-					"name" : "SW[7]",
+					"name" : "SW[9]",
 					"strict" : false
 				},
 				{
@@ -252,7 +332,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "SW[9]",
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
 					"strict" : false
 				}
 			]
