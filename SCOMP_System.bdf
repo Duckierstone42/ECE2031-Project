@@ -765,7 +765,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 792 248 1040 424)
+	(rect 776 248 1024 424)
 	(text "IO_DECODER" (rect 5 0 78 12)(font "Arial" ))
 	(text "inst11" (rect 8 160 37 172)(font "Arial" ))
 	(port
@@ -834,17 +834,6 @@ https://fpgasoftware.intel.com/eula.
 	(drawing
 		(rectangle (rect 16 16 232 160))
 	)
-)
-(connector
-	(text "IO_ADDR[10..0]" (rect 706 264 780 281)(font "Intel Clear" ))
-	(pt 696 280)
-	(pt 792 280)
-	(bus)
-)
-(connector
-	(text "IO_CYCLE" (rect 706 280 755 297)(font "Intel Clear" ))
-	(pt 696 296)
-	(pt 792 296)
 )
 (connector
 	(text "clock_4Hz" (rect 1018 120 1066 137)(font "Intel Clear" ))
@@ -1065,41 +1054,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 304 936)
 )
 (connector
-	(text "SWITCH_EN" (rect 1050 264 1107 281)(font "Intel Clear" ))
-	(pt 1040 280)
-	(pt 1120 280)
-)
-(connector
-	(text "LED_EN" (rect 1050 280 1087 297)(font "Intel Clear" ))
-	(pt 1040 296)
-	(pt 1120 296)
-)
-(connector
-	(text "TIMER_EN" (rect 1050 296 1099 313)(font "Intel Clear" ))
-	(pt 1040 312)
-	(pt 1120 312)
-)
-(connector
-	(text "HEX0_EN" (rect 1050 312 1094 329)(font "Intel Clear" ))
-	(pt 1040 328)
-	(pt 1120 328)
-)
-(connector
-	(text "HEX1_EN" (rect 1050 328 1094 345)(font "Intel Clear" ))
-	(pt 1040 344)
-	(pt 1120 344)
-)
-(connector
-	(text "DATA_EN" (rect 1050 360 1096 377)(font "Intel Clear" ))
-	(pt 1040 376)
-	(pt 1120 376)
-)
-(connector
-	(text "WR_ADDR_EN" (rect 1050 344 1120 361)(font "Intel Clear" ))
-	(pt 1040 360)
-	(pt 1120 360)
-)
-(connector
 	(text "IO_WRITE" (rect 194 968 242 985)(font "Intel Clear" ))
 	(pt 304 984)
 	(pt 184 984)
@@ -1200,6 +1154,52 @@ https://fpgasoftware.intel.com/eula.
 	(pt 688 936)
 	(bus)
 )
+(connector
+	(text "IO_ADDR[10..0]" (rect 690 264 764 281)(font "Intel Clear" ))
+	(pt 680 280)
+	(pt 776 280)
+	(bus)
+)
+(connector
+	(text "IO_CYCLE" (rect 690 280 739 297)(font "Intel Clear" ))
+	(pt 680 296)
+	(pt 776 296)
+)
+(connector
+	(text "SWITCH_EN" (rect 1034 264 1091 281)(font "Intel Clear" ))
+	(pt 1024 280)
+	(pt 1104 280)
+)
+(connector
+	(text "LED_EN" (rect 1034 280 1071 297)(font "Intel Clear" ))
+	(pt 1024 296)
+	(pt 1104 296)
+)
+(connector
+	(text "TIMER_EN" (rect 1034 296 1083 313)(font "Intel Clear" ))
+	(pt 1024 312)
+	(pt 1104 312)
+)
+(connector
+	(text "HEX0_EN" (rect 1034 312 1078 329)(font "Intel Clear" ))
+	(pt 1024 328)
+	(pt 1104 328)
+)
+(connector
+	(text "HEX1_EN" (rect 1034 328 1078 345)(font "Intel Clear" ))
+	(pt 1024 344)
+	(pt 1104 344)
+)
+(connector
+	(text "WR_ADDR_EN" (rect 1034 344 1104 361)(font "Intel Clear" ))
+	(pt 1024 360)
+	(pt 1104 360)
+)
+(connector
+	(text "DATA_EN" (rect 1034 360 1080 377)(font "Intel Clear" ))
+	(pt 1024 376)
+	(pt 1104 376)
+)
 (junction (pt 536 280))
 (text "The daughterboard test points." (rect 1272 1096 1454 1115)(font "Intel Clear" (font_size 8)))
 (text "Can be useful for testing using the oscilloscope." (rect 1272 1120 1549 1139)(font "Intel Clear" (font_size 8)))
@@ -1207,7 +1207,7 @@ https://fpgasoftware.intel.com/eula.
 (title_block
 	(rect 1112 1264 1480 1384)
 	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 12)(font "Arial" ))(text "GaTech DDL" (rect 56 2 170 20)(font "Arial" (font_size 12)))(border))
-	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Mon Nov 18 13:33:48 2024" (rect 56 3 237 19)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Mon Nov 18 14:47:18 2024" (rect 56 3 237 19)(font "Arial" (font_size 10)))(date)(border))
 	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 59 12)(font "Arial" ))(text "Kevin Johnson, Tom Collins" (rect 56 2 286 20)(font "Arial" (font_size 12)))(border))
 	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 49 12)(font "Arial" ))(text "1.00" (rect 56 1 85 17)(font "Arial" (font_size 10)))(border))
 	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 12)(font "Arial" ))(text "1" (rect 34 4 42 20)(font "Arial" (font_size 10))))

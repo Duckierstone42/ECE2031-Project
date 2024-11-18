@@ -128,7 +128,7 @@ begin
 				 mem_write_enable <= '0';
 				 mem_data_in      <= (others => '0');
 			elsif CS_ADDR = '1' then
-				 -- Update address register if IO_ADDR is 0x70 and write_enable is active
+				 -- Update address register if  CS_ADDR and SCOMP_OUT is
 				 if SCOMP_OUT = '1' then
 					  address <= IO_DATA;
 				 end if;
@@ -159,14 +159,14 @@ begin
     -- Instantiation of altsyncram
     mem_instance : altsyncram
         generic map (
-            numwords_a => 65536,
+            numwords_a => 2048,
 				widthad_a => 16,
 				width_a => 16,
 				power_up_uninitialized => "FALSE",
 				clock_enable_input_a => "BYPASS",
 				clock_enable_output_a => "BYPASS",
 				intended_device_family => "MAX 10",
-				lpm_hint => "ENABLE_RUNTIME_MOD=NO",
+				lpm_hint => "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=live",
 				lpm_type => "altsyncram",
 				operation_mode => "SINGLE_PORT",
 				outdata_aclr_a => "NONE",

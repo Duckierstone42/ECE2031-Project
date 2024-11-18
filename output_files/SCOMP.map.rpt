@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP
-Mon Nov 18 13:39:45 2024
+Mon Nov 18 14:40:05 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -30,7 +30,7 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  22. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2
  23. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3
  24. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4
- 25. Source assignments for ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated
+ 25. Source assignments for ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|altsyncram_9qv2:altsyncram1
  26. Source assignments for sld_signaltap:auto_signaltap_0
  27. Parameter Settings for User Entity Instance: SCOMP:inst|altsyncram:altsyncram_component
  28. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_CLSHIFT:shifter
@@ -42,10 +42,12 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  34. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
  35. altsyncram Parameter Settings by Entity Instance
  36. Signal Tap Logic Analyzer Settings
- 37. Post-Synthesis Netlist Statistics for Top Partition
- 38. Elapsed Time Per Partition
- 39. Connections to In-System Debugging Instance "auto_signaltap_0"
- 40. Analysis & Synthesis Messages
+ 37. In-System Memory Content Editor Settings
+ 38. Post-Synthesis Netlist Statistics for Top Partition
+ 39. Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub
+ 40. Elapsed Time Per Partition
+ 41. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 42. Analysis & Synthesis Messages
 
 
 
@@ -72,16 +74,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 18 13:39:45 2024       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 18 14:40:04 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; SCOMP                                       ;
 ; Top-level Entity Name           ; SCOMP_System                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 752                                         ;
+; Total registers                 ; 834                                         ;
 ; Total pins                      ; 95                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 45,056                                      ;
+; Total block memory bits         ; 77,824                                      ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -232,10 +234,12 @@ https://fpgasoftware.intel.com/eula.
 ; altera_pll.v                                                       ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                         ;             ;
 ; altera_pll_dps_lcell_comb.v                                        ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll_dps_lcell_comb.v                                          ;             ;
 ; altera_cyclonev_pll.v                                              ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_cyclonev_pll.v                                                ;             ;
-; db/altsyncram_9104.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf                                             ;             ;
-; db/decode_dla.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_dla.tdf                                                  ;             ;
-; db/decode_61a.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_61a.tdf                                                  ;             ;
-; db/mux_chb.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/mux_chb.tdf                                                     ;             ;
+; db/altsyncram_pa24.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf                                             ;             ;
+; db/altsyncram_9qv2.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9qv2.tdf                                             ;             ;
+; sld_mod_ram_rom.vhd                                                ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd                                                  ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                        ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                       ;             ;
 ; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_signaltap.vhd                                                    ;             ;
 ; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_signaltap_impl.vhd                                               ;             ;
 ; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_ela_control.vhd                                                  ;             ;
@@ -272,9 +276,6 @@ https://fpgasoftware.intel.com/eula.
 ; db/cmpr_d9c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/cmpr_d9c.tdf                                                    ;             ;
 ; db/cntr_kri.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/cntr_kri.tdf                                                    ;             ;
 ; db/cmpr_99c.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/cmpr_99c.tdf                                                    ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_rom_sr.vhd                                                       ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd                                        ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv                                    ;             ;
 ; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_hub.vhd                                                          ; altera_sld  ;
 ; db/ip/sldfd7bd03d/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/alt_sld_fab.v                                    ; alt_sld_fab ;
 ; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
@@ -286,6 +287,9 @@ https://fpgasoftware.intel.com/eula.
 ; db/altsyncram_ga34.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_ga34.tdf                                             ;             ;
 ; custom_mem_test.mif                                                ; yes             ; Auto-Found Memory Initialization File        ; custom_mem_test.mif                                                                                                         ;             ;
 ; db/altsyncram_qb04.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_qb04.tdf                                             ;             ;
+; db/decode_dla.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_dla.tdf                                                  ;             ;
+; db/decode_61a.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_61a.tdf                                                  ;             ;
+; db/mux_chb.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/mux_chb.tdf                                                     ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
@@ -294,20 +298,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 547                      ;
+; Estimate of Logic utilization (ALMs needed) ; 639                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 716                      ;
-;     -- 7 input functions                    ; 1                        ;
-;     -- 6 input functions                    ; 143                      ;
-;     -- 5 input functions                    ; 197                      ;
-;     -- 4 input functions                    ; 99                       ;
-;     -- <=3 input functions                  ; 276                      ;
+; Combinational ALUT usage for logic          ; 824                      ;
+;     -- 7 input functions                    ; 4                        ;
+;     -- 6 input functions                    ; 182                      ;
+;     -- 5 input functions                    ; 220                      ;
+;     -- 4 input functions                    ; 120                      ;
+;     -- <=3 input functions                  ; 298                      ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 752                      ;
+; Dedicated logic registers                   ; 834                      ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 95                       ;
 ; Total MLAB memory bits                      ; 0                        ;
-; Total block memory bits                     ; 45056                    ;
+; Total block memory bits                     ; 77824                    ;
 ;                                             ;                          ;
 ; Total DSP Blocks                            ; 0                        ;
 ;                                             ;                          ;
@@ -315,9 +319,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Fractional PLLs                      ; 1                        ;
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
-; Maximum fan-out                             ; 341                      ;
-; Total fan-out                               ; 6205                     ;
-; Average fan-out                             ; 3.67                     ;
+; Maximum fan-out                             ; 446                      ;
+; Total fan-out                               ; 7570                     ;
+; Average fan-out                             ; 3.99                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -326,37 +330,43 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                      ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |SCOMP_System                                                                                                                           ; 716 (17)            ; 752 (0)                   ; 45056             ; 0          ; 95   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
+; |SCOMP_System                                                                                                                           ; 824 (39)            ; 834 (0)                   ; 77824             ; 0          ; 95   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
 ;    |DIG_IN:inst7|                                                                                                                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                                                                                                                                                                                                                                               ; DIG_IN                            ; work         ;
 ;    |DIG_OUT:inst21|                                                                                                                     ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_OUT:inst21                                                                                                                                                                                                                                                                                                                             ; DIG_OUT                           ; work         ;
-;    |HEX_DISP_6:inst9|                                                                                                                   ; 45 (3)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                                                                                                                                                                                                                                           ; HEX_DISP_6                        ; work         ;
+;    |ExternalMemory:inst6|                                                                                                               ; 78 (30)             ; 54 (0)                    ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6                                                                                                                                                                                                                                                                                                                       ; ExternalMemory                    ; work         ;
+;       |altsyncram:mem_instance|                                                                                                         ; 48 (0)              ; 54 (0)                    ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance                                                                                                                                                                                                                                                                                               ; altsyncram                        ; work         ;
+;          |altsyncram_pa24:auto_generated|                                                                                               ; 48 (0)              ; 54 (0)                    ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated                                                                                                                                                                                                                                                                ; altsyncram_pa24                   ; work         ;
+;             |altsyncram_9qv2:altsyncram1|                                                                                               ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|altsyncram_9qv2:altsyncram1                                                                                                                                                                                                                                    ; altsyncram_9qv2                   ; work         ;
+;             |sld_mod_ram_rom:mgl_prim2|                                                                                                 ; 48 (32)             ; 54 (45)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2                                                                                                                                                                                                                                      ; sld_mod_ram_rom                   ; work         ;
+;                |sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|                                                                     ; 16 (16)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr                                                                                                                                                                                   ; sld_rom_sr                        ; work         ;
+;    |HEX_DISP_6:inst9|                                                                                                                   ; 44 (2)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                                                                                                                                                                                                                                           ; HEX_DISP_6                        ; work         ;
 ;       |HEX_DISP:inst1|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst1                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst2|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst2                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst3|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst3                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst4|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst4                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst5|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst5                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst6|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst6                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
-;    |IO_DECODER:inst11|                                                                                                                  ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|IO_DECODER:inst11                                                                                                                                                                                                                                                                                                                          ; IO_DECODER                        ; work         ;
+;    |IO_DECODER:inst11|                                                                                                                  ; 9 (9)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|IO_DECODER:inst11                                                                                                                                                                                                                                                                                                                          ; IO_DECODER                        ; work         ;
 ;    |PLL_main:inst1|                                                                                                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1                                                                                                                                                                                                                                                                                                                             ; PLL_main                          ; pll_main     ;
 ;       |PLL_main_0002:pll_main_inst|                                                                                                     ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst                                                                                                                                                                                                                                                                                                 ; PLL_main_0002                     ; PLL_main     ;
 ;          |altera_pll:altera_pll_i|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                         ; altera_pll                        ; work         ;
 ;             |altera_cyclonev_pll:cyclonev_pll|                                                                                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll                                                                                                                                                                                                                                        ; altera_cyclonev_pll               ; work         ;
 ;                |altera_cyclonev_pll_base:fpll_0|                                                                                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0                                                                                                                                                                                                        ; altera_cyclonev_pll_base          ; work         ;
-;    |SCOMP:inst|                                                                                                                         ; 258 (217)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
+;    |SCOMP:inst|                                                                                                                         ; 243 (202)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
 ;       |altsyncram:altsyncram_component|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                                 ; altsyncram                        ; work         ;
 ;          |altsyncram_3924:auto_generated|                                                                                               ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3924:auto_generated                                                                                                                                                                                                                                                                  ; altsyncram_3924                   ; work         ;
 ;       |lpm_clshift:shifter|                                                                                                             ; 41 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                                                                                                                                                                                                                                             ; lpm_clshift                       ; work         ;
 ;          |lpm_clshift_fuc:auto_generated|                                                                                               ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter|lpm_clshift_fuc:auto_generated                                                                                                                                                                                                                                                                              ; lpm_clshift_fuc                   ; work         ;
 ;    |TIMER:inst4|                                                                                                                        ; 33 (33)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER:inst4                                                                                                                                                                                                                                                                                                                                ; TIMER                             ; work         ;
 ;    |clk_div:inst5|                                                                                                                      ; 27 (27)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|clk_div:inst5                                                                                                                                                                                                                                                                                                                              ; clk_div                           ; work         ;
-;    |sld_hub:auto_hub|                                                                                                                   ; 92 (1)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
-;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 91 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
-;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 91 (0)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
-;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 91 (1)              ; 90 (5)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                    ; alt_sld_fab_alt_sld_fab           ; alt_sld_fab  ;
-;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 90 (0)              ; 85 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab_alt_sld_fab_sldfabric ; alt_sld_fab  ;
-;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 90 (57)             ; 85 (57)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; sld_jtag_hub                      ; work         ;
+;    |sld_hub:auto_hub|                                                                                                                   ; 113 (1)             ; 118 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
+;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 112 (0)             ; 118 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
+;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 112 (0)             ; 118 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
+;             |alt_sld_fab_alt_sld_fab:alt_sld_fab|                                                                                       ; 112 (1)             ; 118 (6)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab                                                                                                                    ; alt_sld_fab_alt_sld_fab           ; alt_sld_fab  ;
+;                |alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|                                                                            ; 111 (0)             ; 112 (0)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric                                                                        ; alt_sld_fab_alt_sld_fab_sldfabric ; alt_sld_fab  ;
+;                   |sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|                                                                        ; 111 (77)            ; 112 (84)                  ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub                           ; sld_jtag_hub                      ; work         ;
 ;                      |sld_rom_sr:hub_info_reg|                                                                                          ; 15 (15)             ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg   ; sld_rom_sr                        ; work         ;
-;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 18 (18)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; sld_shadow_jsm                    ; altera_sld   ;
+;                      |sld_shadow_jsm:shadow_jsm|                                                                                        ; 19 (19)             ; 19 (19)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_shadow_jsm:shadow_jsm ; sld_shadow_jsm                    ; altera_sld   ;
 ;    |sld_signaltap:auto_signaltap_0|                                                                                                     ; 238 (2)             ; 401 (6)                   ; 12288             ; 0          ; 0    ; 0            ; |SCOMP_System|sld_signaltap:auto_signaltap_0                                                                                                                                                                                                                                                                                                             ; sld_signaltap                     ; work         ;
 ;       |sld_signaltap_impl:sld_signaltap_body|                                                                                           ; 236 (0)             ; 395 (0)                   ; 12288             ; 0          ; 0    ; 0            ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body                                                                                                                                                                                                                                                                       ; sld_signaltap_impl                ; work         ;
 ;          |sld_signaltap_implb:sld_signaltap_body|                                                                                       ; 236 (67)            ; 395 (96)                  ; 12288             ; 0          ; 0    ; 0            ; |SCOMP_System|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body                                                                                                                                                                                                                                ; sld_signaltap_implb               ; work         ;
@@ -401,6 +411,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
 ; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF        ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+; ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|altsyncram_9qv2:altsyncram1|ALTSYNCRAM                                                                                    ; AUTO ; True Dual Port   ; 2048         ; 16           ; 2048         ; 16           ; 32768 ; None       ;
 ; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3924:auto_generated|ALTSYNCRAM                                                                                                                  ; AUTO ; Single Port      ; 2048         ; 16           ; --           ; --           ; 32768 ; code_1.mif ;
 ; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ke84:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4096         ; 3            ; 4096         ; 3            ; 12288 ; None       ;
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
@@ -473,60 +484,89 @@ Encoding Type:  One-Hot
 +------------------+---------------+--------------+--------------+-------------+----------------+--------------+-------------+--------------+---------------+-----------------+---------------+---------------+----------------+---------------+---------------+--------------+---------------+--------------+----------------+------------------+-----------------+----------------+-----------------+----------------+---------------+--------------+--------------+-------------+------------+
 
 
-+-----------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                       ;
-+-----------------------------------------------------+----------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal        ; Free of Timing Hazards ;
-+-----------------------------------------------------+----------------------------+------------------------+
-; TIMER:inst4|IO_COUNT[15]                            ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[14]                            ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[13]                            ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[12]                            ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[11]                            ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[10]                            ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[9]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[8]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[7]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[6]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[5]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[4]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[3]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[2]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[1]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; TIMER:inst4|IO_COUNT[0]                             ; IO_DECODER:inst11|TIMER_EN ; yes                    ;
-; Number of user-specified and inferred latches = 16  ;                            ;                        ;
-+-----------------------------------------------------+----------------------------+------------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                  ;
++-----------------------------------------------------+---------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                   ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------------------------+------------------------+
+; TIMER:inst4|IO_COUNT[15]                            ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[14]                            ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[13]                            ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[12]                            ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[11]                            ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[10]                            ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[9]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[8]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[7]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[6]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[5]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[4]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[3]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[2]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[1]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; TIMER:inst4|IO_COUNT[0]                             ; IO_DECODER:inst11|TIMER_EN            ; yes                    ;
+; ExternalMemory:inst6|mem_write_enable               ; IO_DECODER:inst11|WR_ADDR_EN          ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[15]                ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|address[0]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[1]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[2]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[3]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[4]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[5]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[6]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[7]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[8]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[9]                     ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|address[10]                    ; ExternalMemory:inst6|address[0]       ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[14]                ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[13]                ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[12]                ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[11]                ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[10]                ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[9]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[8]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[7]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[6]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[5]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[4]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[3]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[2]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[1]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; ExternalMemory:inst6|mem_data_in[0]                 ; ExternalMemory:inst6|mem_write_enable ; yes                    ;
+; Number of user-specified and inferred latches = 44  ;                                       ;                        ;
++-----------------------------------------------------+---------------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                ;
-+-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-; Register name                                                                                                                       ; Reason for Removal                          ;
-+-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
-; DIG_IN:inst7|B_DI[10..15]                                                                                                           ; Stuck at GND due to stuck port data_in      ;
-; SCOMP:inst|int_req[0]                                                                                                               ; Stuck at GND due to stuck port clock        ;
-; SCOMP:inst|int_req_sync[0]                                                                                                          ; Stuck at GND due to stuck port data_in      ;
-; SCOMP:inst|int_req[1..3]                                                                                                            ; Stuck at GND due to stuck port clock        ;
-; SCOMP:inst|int_req_sync[1..3]                                                                                                       ; Stuck at GND due to stuck port data_in      ;
-; SCOMP:inst|IIE[0..3]                                                                                                                ; Lost fanout                                 ;
-; SCOMP:inst|int_ack[0..3]                                                                                                            ; Lost fanout                                 ;
-; SCOMP:inst|AC_saved[0..15]                                                                                                          ; Stuck at GND due to stuck port clock_enable ;
-; SCOMP:inst|PC_saved[0..10]                                                                                                          ; Stuck at GND due to stuck port clock_enable ;
-; SCOMP:inst|GIE                                                                                                                      ; Lost fanout                                 ;
-; SCOMP:inst|state.ex_nop                                                                                                             ; Lost fanout                                 ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~2                ; Lost fanout                                 ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~3                ; Lost fanout                                 ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~4                ; Lost fanout                                 ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~5                ; Lost fanout                                 ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_HIGH  ; Stuck at GND due to stuck port clock        ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1 ; Stuck at GND due to stuck port clock        ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0 ; Lost fanout                                 ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2 ; Stuck at GND due to stuck port clock        ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3 ; Stuck at GND due to stuck port clock        ;
-; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4 ; Stuck at GND due to stuck port clock        ;
-; Total Number of Removed Registers = 61                                                                                              ;                                             ;
-+-------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                 ;
++--------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+; Register name                                                                                                                        ; Reason for Removal                          ;
++--------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
+; DIG_IN:inst7|B_DI[10..15]                                                                                                            ; Stuck at GND due to stuck port data_in      ;
+; SCOMP:inst|int_req[0]                                                                                                                ; Stuck at GND due to stuck port clock        ;
+; SCOMP:inst|int_req_sync[0]                                                                                                           ; Stuck at GND due to stuck port data_in      ;
+; SCOMP:inst|int_req[1..3]                                                                                                             ; Stuck at GND due to stuck port clock        ;
+; SCOMP:inst|int_req_sync[1..3]                                                                                                        ; Stuck at GND due to stuck port data_in      ;
+; SCOMP:inst|IIE[0..3]                                                                                                                 ; Lost fanout                                 ;
+; SCOMP:inst|int_ack[0..3]                                                                                                             ; Lost fanout                                 ;
+; SCOMP:inst|AC_saved[0..15]                                                                                                           ; Stuck at GND due to stuck port clock_enable ;
+; SCOMP:inst|PC_saved[0..10]                                                                                                           ; Stuck at GND due to stuck port clock_enable ;
+; SCOMP:inst|GIE                                                                                                                       ; Lost fanout                                 ;
+; SCOMP:inst|state.ex_nop                                                                                                              ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~2                 ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~3                 ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~4                 ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state~5                 ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_HIGH   ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_1  ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_0  ; Lost fanout                                 ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_2  ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_3  ; Stuck at GND due to stuck port clock        ;
+; PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|dps_extra_kick:dps_extra_inst|dps_current_state.PHASE_DONE_LOW_4  ; Stuck at GND due to stuck port clock        ;
+; ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[4] ; Stuck at GND due to stuck port data_in      ;
+; Total Number of Removed Registers = 62                                                                                               ;                                             ;
++--------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -562,12 +602,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 752   ;
+; Total registers                              ; 834   ;
 ; Number of registers using Synchronous Clear  ; 152   ;
-; Number of registers using Synchronous Load   ; 236   ;
-; Number of registers using Asynchronous Clear ; 263   ;
+; Number of registers using Synchronous Load   ; 302   ;
+; Number of registers using Asynchronous Clear ; 320   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 501   ;
+; Number of registers using Clock Enable       ; 576   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -596,17 +636,35 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                        ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[3][7] ;
-; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[2]          ;
-; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[13]         ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[3]                ;
-; 13:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                                                                                                                                                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                                                                                                                                                                                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_reg[14]                                                                                                                                                                                                                               ;
+; 3:1                ; 5 bits    ; 10 LEs        ; 5 LEs                ; 5 LEs                  ; Yes        ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_data_shift_cntr_reg[2]                                                                                                                                                                                                                     ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 0 LEs                ; 32 LEs                 ; Yes        ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|ram_rom_addr_reg[15]                                                                                                                                                                                                                               ;
+; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[2][0]                                                                                                                                                                                                                                                                                                                                ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|word_counter[4]                                                                                                                                                                                 ;
+; 26:1               ; 4 bits    ; 68 LEs        ; 52 LEs               ; 16 LEs                 ; Yes        ; |SCOMP_System|ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr|WORD_SR[1]                                                                                                                                                                                      ;
+; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[2]                                                                                                                                                                                                                                                                                                                                         ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[15]                                                                                                                                                                                                                                                                                                                                        ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[15]                                                                                                                                                                                                                                                                                                                                              ;
+; 4:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[9]                                                                                                                                                                                                                                                                                                                                               ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1                                                                                                                                                                                                                                                                                                                                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[1][6]                    ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|shadow_irf_reg[2][7]                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[0]                    ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|hub_minor_ver_reg[1]                    ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 0 LEs                ; 16 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[1][7]                           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 0 LEs                ; 20 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irf_reg[2][8]                           ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|mixer_addr_reg_internal[2]              ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|word_counter[0] ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[9]                             ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|irsr_reg[0]                             ;
+; 34:1               ; 4 bits    ; 88 LEs        ; 60 LEs               ; 28 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|design_hash_reg[0]                      ;
+; 28:1               ; 4 bits    ; 72 LEs        ; 56 LEs               ; 16 LEs                 ; Yes        ; |SCOMP_System|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric|alt_sld_fab_alt_sld_fab:alt_sld_fab|alt_sld_fab_alt_sld_fab_sldfabric:sldfabric|sld_jtag_hub:\jtag_hub_gen:real_sld_jtag_hub|sld_rom_sr:hub_info_reg|WORD_SR[0]      ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
@@ -698,13 +756,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------+-------+------+----------------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------+
-; Source assignments for ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------+
-; Assignment                      ; Value              ; From ; To                                   ;
-+---------------------------------+--------------------+------+--------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                    ;
-+---------------------------------+--------------------+------+--------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Source assignments for ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|altsyncram_9qv2:altsyncram1 ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                                               ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                                                ;
++---------------------------------+--------------------+------+------------------------------------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -1082,7 +1140,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                       ;
 ; WIDTH_A                            ; 16                   ; Signed Integer                ;
 ; WIDTHAD_A                          ; 16                   ; Signed Integer                ;
-; NUMWORDS_A                         ; 65536                ; Signed Integer                ;
+; NUMWORDS_A                         ; 2048                 ; Signed Integer                ;
 ; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                       ;
 ; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                       ;
 ; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                       ;
@@ -1124,7 +1182,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_9104      ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_pa24      ; Untyped                       ;
 +------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1215,7 +1273,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Entity Instance                           ; ExternalMemory:inst6|altsyncram:mem_instance ;
 ;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
 ;     -- WIDTH_A                            ; 16                                           ;
-;     -- NUMWORDS_A                         ; 65536                                        ;
+;     -- NUMWORDS_A                         ; 2048                                         ;
 ;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
 ;     -- WIDTH_B                            ; 1                                            ;
 ;     -- NUMWORDS_B                         ; 0                                            ;
@@ -1235,51 +1293,95 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+------------------+---------------------+------------------+--------------+----------+------------------------+----------------------+--------------------+-----------------------------+-----------------+------------------+--------------------------+
 
 
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; In-System Memory Content Editor Settings                                                                                                ;
++----------------+-------------+-------+-------+------------+-----------------------------------------------------------------------------+
+; Instance Index ; Instance ID ; Width ; Depth ; Mode       ; Hierarchy Location                                                          ;
++----------------+-------------+-------+-------+------------+-----------------------------------------------------------------------------+
+; 0              ; live        ; 16    ; 2048  ; Read/Write ; ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated ;
++----------------+-------------+-------+-------+------------+-----------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------------+-----------------------+
 ; Type                        ; Count                 ;
 +-----------------------------+-----------------------+
-; arriav_ff                   ; 261                   ;
-;     CLR                     ; 68                    ;
-;     ENA                     ; 41                    ;
-;     ENA CLR                 ; 10                    ;
+; arriav_ff                   ; 315                   ;
+;     CLR                     ; 73                    ;
+;     CLR SLD                 ; 1                     ;
+;     ENA                     ; 50                    ;
+;     ENA CLR                 ; 17                    ;
+;     ENA CLR SLD             ; 16                    ;
 ;     ENA SCLR                ; 11                    ;
-;     ENA SLD                 ; 99                    ;
+;     ENA SLD                 ; 115                   ;
 ;     SCLR                    ; 20                    ;
 ;     plain                   ; 12                    ;
-; arriav_lcell_comb           ; 392                   ;
-;     arith                   ; 63                    ;
-;         1 data inputs       ; 46                    ;
+; arriav_lcell_comb           ; 478                   ;
+;     arith                   ; 79                    ;
+;         1 data inputs       ; 62                    ;
 ;         2 data inputs       ; 1                     ;
 ;         5 data inputs       ; 16                    ;
-;     normal                  ; 329                   ;
+;     extend                  ; 1                     ;
+;         7 data inputs       ; 1                     ;
+;     normal                  ; 398                   ;
 ;         0 data inputs       ; 1                     ;
 ;         1 data inputs       ; 7                     ;
-;         2 data inputs       ; 15                    ;
-;         3 data inputs       ; 50                    ;
-;         4 data inputs       ; 62                    ;
-;         5 data inputs       ; 112                   ;
-;         6 data inputs       ; 82                    ;
-; boundary_port               ; 96                    ;
+;         2 data inputs       ; 20                    ;
+;         3 data inputs       ; 47                    ;
+;         4 data inputs       ; 86                    ;
+;         5 data inputs       ; 128                   ;
+;         6 data inputs       ; 109                   ;
+; boundary_port               ; 123                   ;
 ; cyclonev_fractional_pll     ; 1                     ;
 ; cyclonev_pll_output_counter ; 1                     ;
 ; cyclonev_pll_reconfig       ; 1                     ;
 ; cyclonev_pll_refclk_select  ; 1                     ;
-; stratixv_ram_block          ; 16                    ;
+; stratixv_ram_block          ; 32                    ;
 ;                             ;                       ;
 ; Max LUT depth               ; 5.50                  ;
-; Average LUT depth           ; 2.49                  ;
+; Average LUT depth           ; 2.40                  ;
 +-----------------------------+-----------------------+
 
 
-+-------------------------------+
-; Elapsed Time Per Partition    ;
-+----------------+--------------+
-; Partition Name ; Elapsed Time ;
-+----------------+--------------+
-; Top            ; 00:00:01     ;
-+----------------+--------------+
++------------------------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Partition sld_hub:auto_hub ;
++-----------------------+------------------------------------------+
+; Type                  ; Count                                    ;
++-----------------------+------------------------------------------+
+; arriav_ff             ; 118                                      ;
+;     CLR               ; 6                                        ;
+;     ENA               ; 30                                       ;
+;     ENA CLR           ; 16                                       ;
+;     ENA CLR SLD       ; 43                                       ;
+;     SCLR              ; 7                                        ;
+;     plain             ; 16                                       ;
+; arriav_lcell_comb     ; 113                                      ;
+;     extend            ; 3                                        ;
+;         7 data inputs ; 3                                        ;
+;     normal            ; 110                                      ;
+;         0 data inputs ; 1                                        ;
+;         1 data inputs ; 4                                        ;
+;         2 data inputs ; 22                                       ;
+;         3 data inputs ; 15                                       ;
+;         4 data inputs ; 12                                       ;
+;         5 data inputs ; 31                                       ;
+;         6 data inputs ; 25                                       ;
+; boundary_port         ; 173                                      ;
+;                       ;                                          ;
+; Max LUT depth         ; 3.00                                     ;
+; Average LUT depth     ; 1.30                                     ;
++-----------------------+------------------------------------------+
+
+
++---------------------------------+
+; Elapsed Time Per Partition      ;
++------------------+--------------+
+; Partition Name   ; Elapsed Time ;
++------------------+--------------+
+; Top              ; 00:00:01     ;
+; sld_hub:auto_hub ; 00:00:00     ;
++------------------+--------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1335,7 +1437,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Mon Nov 18 13:39:16 2024
+    Info: Processing started: Mon Nov 18 14:39:38 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
@@ -1371,6 +1473,9 @@ Info (12021): Found 1 design units, including 1 entities, in source file pll_mai
 Info (12021): Found 2 design units, including 1 entities, in source file externalmemory.vhd
     Info (12022): Found design unit 1: ExternalMemory-Behavioral File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 113
     Info (12023): Found entity 1: ExternalMemory File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 102
+Info (12021): Found 2 design units, including 1 entities, in source file ram.vhd
+    Info (12022): Found design unit 1: ram-SYN File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ram.vhd Line: 55
+    Info (12023): Found entity 1: ram File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ram.vhd Line: 43
 Info (12127): Elaborating entity "SCOMP_System" for the top level hierarchy
 Info (12128): Elaborating entity "SCOMP" for hierarchy "SCOMP:inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 70
@@ -1706,7 +1811,6 @@ Info (10041): Inferred latch for "IO_COUNT[14]" at TIMER.vhd(59) File: S:/Georgi
 Info (10041): Inferred latch for "IO_COUNT[15]" at TIMER.vhd(59) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/TIMER.vhd Line: 59
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst5"
 Info (12128): Elaborating entity "ExternalMemory" for hierarchy "ExternalMemory:inst6"
-Warning (10036): Verilog HDL or VHDL warning at ExternalMemory.vhd(118): object "mem_data_out" assigned a value but never read File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 118
 Warning (10492): VHDL Process Statement warning at ExternalMemory.vhd(133): signal "IO_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 133
 Warning (10492): VHDL Process Statement warning at ExternalMemory.vhd(137): signal "IO_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 137
 Warning (10631): VHDL Process Statement warning at ExternalMemory.vhd(124): inferring latch(es) for signal or variable "address", which holds its previous value in one or more paths through the process File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
@@ -1745,6 +1849,9 @@ Info (10041): Inferred latch for "address[12]" at ExternalMemory.vhd(124) File: 
 Info (10041): Inferred latch for "address[13]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
 Info (10041): Inferred latch for "address[14]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
 Info (10041): Inferred latch for "address[15]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Warning (272007): Not using extra address lines in altsyncram megafunction design -- 2048 memory words in side A specified but total number of address lines is 16 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
+Warning (272007): Not using extra address lines in altsyncram megafunction design -- 2048 memory words in side A specified but total number of address lines is 16 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
+Warning (272007): Not using extra address lines in altsyncram megafunction design -- 2048 memory words in side B specified but total number of address lines is 16 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
 Info (12128): Elaborating entity "altsyncram" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
 Info (12130): Elaborated megafunction instantiation "ExternalMemory:inst6|altsyncram:mem_instance" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
 Info (12133): Instantiated megafunction "ExternalMemory:inst6|altsyncram:mem_instance" with the following parameter: File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
@@ -1771,7 +1878,7 @@ Info (12133): Instantiated megafunction "ExternalMemory:inst6|altsyncram:mem_ins
     Info (12134): Parameter "init_file" = "UNUSED"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
-    Info (12134): Parameter "numwords_a" = "65536"
+    Info (12134): Parameter "numwords_a" = "2048"
     Info (12134): Parameter "numwords_b" = "0"
     Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
     Info (12134): Parameter "outdata_aclr_a" = "NONE"
@@ -1796,20 +1903,31 @@ Info (12133): Instantiated megafunction "ExternalMemory:inst6|altsyncram:mem_ins
     Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
     Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
+    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=YES,INSTANCE_NAME=live"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9104.tdf
-    Info (12023): Found entity 1: altsyncram_9104 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_9104" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
-    Info (12023): Found entity 1: decode_dla File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_dla.tdf Line: 23
-Info (12128): Elaborating entity "decode_dla" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|decode_dla:decode3" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 44
-Info (12021): Found 1 design units, including 1 entities, in source file db/decode_61a.tdf
-    Info (12023): Found entity 1: decode_61a File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_61a.tdf Line: 23
-Info (12128): Elaborating entity "decode_61a" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|decode_61a:rden_decode" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 45
-Info (12021): Found 1 design units, including 1 entities, in source file db/mux_chb.tdf
-    Info (12023): Found entity 1: mux_chb File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/mux_chb.tdf Line: 23
-Info (12128): Elaborating entity "mux_chb" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|mux_chb:mux2" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 46
+Warning (287001): Assertion warning: Not using extra address lines in altsyncram megafunction design -- 2048 memory words in side A specified but total number of address lines is 16 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 61
+Warning (287001): Assertion warning: Not using extra address lines in altsyncram megafunction design -- 2048 memory words in side A specified but total number of address lines is 16 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 64
+Warning (287001): Assertion warning: Not using extra address lines in altsyncram megafunction design -- 2048 memory words in side B specified but total number of address lines is 16 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 67
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_pa24.tdf
+    Info (12023): Found entity 1: altsyncram_pa24 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_pa24" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9qv2.tdf
+    Info (12023): Found entity 1: altsyncram_9qv2 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9qv2.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_9qv2" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|altsyncram_9qv2:altsyncram1" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 37
+Info (12128): Elaborating entity "sld_mod_ram_rom" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 38
+Info (12130): Elaborated megafunction instantiation "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 38
+Info (12133): Instantiated megafunction "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2" with the following parameter: File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_pa24.tdf Line: 38
+    Info (12134): Parameter "CVALUE" = "0000000000000000"
+    Info (12134): Parameter "IS_DATA_IN_RAM" = "1"
+    Info (12134): Parameter "IS_READABLE" = "1"
+    Info (12134): Parameter "NODE_NAME" = "1818850917"
+    Info (12134): Parameter "NUMWORDS" = "2048"
+    Info (12134): Parameter "SHIFT_COUNT_BITS" = "5"
+    Info (12134): Parameter "WIDTH_WORD" = "16"
+    Info (12134): Parameter "WIDTHAD" = "16"
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 302
+Info (12128): Elaborating entity "sld_jtag_endpoint_adapter_impl" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_jtag_endpoint_adapter:jtag_signal_adapter|sld_jtag_endpoint_adapter_impl:sld_jtag_endpoint_adapter_impl_inst" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd Line: 232
+Info (12128): Elaborating entity "sld_rom_sr" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_pa24:auto_generated|sld_mod_ram_rom:mgl_prim2|sld_rom_sr:\ram_rom_logic_gen:name_gen:info_rom_sr" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_mod_ram_rom.vhd Line: 828
 Info (12128): Elaborating entity "HEX_DISP_6" for hierarchy "HEX_DISP_6:inst9"
 Info (12128): Elaborating entity "HEX_DISP" for hierarchy "HEX_DISP_6:inst9|HEX_DISP:inst1"
 Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst21"
@@ -1836,7 +1954,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.11.18.13:39:32 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.11.18.14:39:52 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1855,7 +1973,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/ip/s
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 142
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
     Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
@@ -1867,135 +1985,6 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|cntsel_temp[1]" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 425
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|cntsel_temp[0]" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 425
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|gnd" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 427
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a0" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 47
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a1" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 69
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a2" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 91
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a3" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 113
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a4" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 135
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a5" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 157
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a6" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 179
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a7" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 201
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a8" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 223
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a9" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 245
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a10" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 267
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a11" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 289
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a12" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 311
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a13" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 333
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a14" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 355
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a15" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 377
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a16" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 399
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a17" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 421
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a18" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 443
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a19" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 465
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a20" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 487
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a21" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 509
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a22" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 531
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a23" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 553
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a24" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 575
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a25" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 597
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a26" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 619
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a27" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 641
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a28" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 663
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a29" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 685
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a30" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 707
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a31" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 729
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a32" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 751
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a33" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 773
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a34" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 795
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a35" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 817
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a36" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 839
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a37" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 861
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a38" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 883
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a39" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 905
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a40" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 927
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a41" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 949
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a42" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 971
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a43" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 993
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a44" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1015
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a45" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1037
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a46" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1059
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a47" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1081
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a48" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1103
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a49" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1125
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a50" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1147
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a51" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1169
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a52" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1191
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a53" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1213
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a54" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1235
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a55" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1257
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a56" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1279
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a57" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1301
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a58" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1323
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a59" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1345
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a60" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1367
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a61" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1389
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a62" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1411
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a63" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1433
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a64" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1455
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a65" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1477
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a66" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1499
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a67" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1521
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a68" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1543
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a69" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1565
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a70" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1587
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a71" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1609
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a72" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1631
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a73" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1653
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a74" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1675
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a75" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1697
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a76" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1719
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a77" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1741
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a78" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1763
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a79" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1785
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a80" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1807
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a81" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1829
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a82" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1851
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a83" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1873
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a84" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1895
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a85" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1917
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a86" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1939
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a87" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1961
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a88" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1983
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a89" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2005
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a90" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2027
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a91" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2049
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a92" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2071
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a93" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2093
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a94" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2115
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a95" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2137
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a96" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2159
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a97" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2181
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a98" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2203
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a99" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2225
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a100" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2247
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a101" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2269
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a102" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2291
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a103" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2313
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a104" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2335
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a105" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2357
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a106" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2379
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a107" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2401
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a108" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2423
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a109" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2445
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a110" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2467
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a111" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2489
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a112" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2511
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a113" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2533
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a114" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2555
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a115" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2577
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a116" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2599
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a117" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2621
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a118" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2643
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a119" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2665
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a120" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2687
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a121" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2709
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a122" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2731
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a123" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2753
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a124" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2775
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a125" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2797
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a126" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2819
-        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a127" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2841
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "IO_DATA[15]" into a selector File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/HEX_DISP.vhd Line: 25
     Warning (13048): Converted tri-state node "IO_DATA[14]" into a selector File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/HEX_DISP.vhd Line: 25
@@ -2013,6 +2002,62 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "IO_DATA[2]" into a selector File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/HEX_DISP.vhd Line: 25
     Warning (13048): Converted tri-state node "IO_DATA[1]" into a selector File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/HEX_DISP.vhd Line: 25
     Warning (13048): Converted tri-state node "IO_DATA[0]" into a selector File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/HEX_DISP.vhd Line: 25
+Warning (13012): Latch ExternalMemory:inst6|mem_write_enable has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 119
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_CYCLE File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 22
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[15] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[0] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[1] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[2] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[3] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[4] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[5] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[6] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[7] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[8] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[9] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|address[10] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[14] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[13] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[12] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[11] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[10] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[9] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[8] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[7] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[6] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[5] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[4] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[3] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[2] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[1] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
+Warning (13012): Latch ExternalMemory:inst6|mem_data_in[0] has unsafe behavior File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal SCOMP:inst|IO_WRITE_int File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 57
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "TPs[3]" is stuck at GND
     Warning (13410): Pin "TPs[2]" is stuck at GND
@@ -2020,18 +2065,19 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "TPs[0]" is stuck at GND
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 15 registers lost all their fanouts during netlist optimizations.
+Info (286031): Timing-Driven Synthesis is running on partition "sld_hub:auto_hub"
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 34 of its 39 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 5 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 17 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1324 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1489 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 84 output pins
-    Info (21061): Implemented 1201 logic cells
-    Info (21064): Implemented 19 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 176 warnings
-    Info: Peak virtual memory: 4987 megabytes
-    Info: Processing ended: Mon Nov 18 13:39:45 2024
-    Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:30
+    Info (21061): Implemented 1350 logic cells
+    Info (21064): Implemented 35 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 108 warnings
+    Info: Peak virtual memory: 4991 megabytes
+    Info: Processing ended: Mon Nov 18 14:40:05 2024
+    Info: Elapsed time: 00:00:27
+    Info: Total CPU time (on all processors): 00:00:29
 
 

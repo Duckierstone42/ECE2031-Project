@@ -320,6 +320,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "clock_50",
+					"strict" : false
+				},
+				{
 					"name" : "SW[9]",
 					"strict" : false
 				},
