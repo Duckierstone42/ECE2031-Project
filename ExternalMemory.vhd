@@ -19,6 +19,8 @@ ENTITY ExternalMemory IS
         RESETN,
         CS_ADDR, --1 if interacting with address
 		  CS_DATA, --1 if 
+		  CS_INCR,
+		  CS_STRIDE,
         SCOMP_OUT,
 		  CLOCK    : IN    STD_LOGIC;
         IO_DATA  : INOUT STD_LOGIC_VECTOR(15 DOWNTO 0)
@@ -26,8 +28,9 @@ ENTITY ExternalMemory IS
 END ExternalMemory;
 
 ARCHITECTURE a OF ExternalMemory IS
-    SIGNAL ADDRESS : STD_LOGIC_VECTOR(15 DOWNTO 0); --Now a 11 bit address register
+    SIGNAL ADDRESS : STD_LOGIC_VECTOR(15 DOWNTO 0); --Now a 16 bit address register
 	 SIGNAL TEMP_DATA     : STD_LOGIC_VECTOR(15 DOWNTO 0); -- 16-bit data output from memory
+	 SIGNAL STRIDE : STD_LOGIC_VECTOR(15 DOWNTO 0); -- 16 bit stride register
     BEGIN
 
     -- Use Intel LPM IP to create tristate drivers
@@ -75,25 +78,22 @@ ARCHITECTURE a OF ExternalMemory IS
     PROCESS(clock)
     BEGIN
         IF RISING_EDGE(clock) THEN
-				IF CS_ADDR = '1'  THEN
-					IF SCOMP_OUT = '1' THEN
-						ADDRESS <= IO_DATA; --Save address in data register
+				IF RESETN = '0' THEN
+					ADDRESS <= (OTHERS => '0');
+					STRIDE <= (OTHERS => '0');
+
+				ELSE
+					IF CS_ADDR = '1'  THEN
+						IF SCOMP_OUT = '1' THEN
+							ADDRESS <= IO_DATA; --Save address in data register	
+						END IF;
+					ELSIF CS_STRIDE = '1' THEN
+							STRIDE <= IO_DATA;
+					ELSIF CS_INCR = '1' THEN
+							ADDRESS <= ADDRESS + STRIDE;
 					END IF;
-					
 				END IF;
 				
---				IF CS_DATA = '1' THEN
---					IF SCOMP_OUT = '1' THEN
---					
---					END IF;
---				
---				END IF;
-					
---            IF SCOMP_OUT = '1' THEN -- If SCOMP is writing, its giving out the data address,
---                SAVED <= IO_DATA;  -- sample the input on the rising edge of CS
---				ELSE --If SCOMP reading
-				
---            END IF;
 			END IF;
     END PROCESS;
 

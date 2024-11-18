@@ -1,17 +1,34 @@
-MIF File
 WIDTH=16;
 DEPTH=2048;
 ADDRESS_RADIX=HEX;
 DATA_RADIX=HEX;
 CONTENT BEGIN
-0000: 6805; -- ADDI 5
-0001: 9870; -- OUT ADDRESS
-0002: 680A; -- ADDI 10 ; Now 15
-0003: 9871; -- OUT DATA
-0004: 6814; -- ADDI 20
-0005: 9071; -- IN DATA; Just makes 0
-0006: 6803; -- ADDI 3 ;
-0007: 9801; -- OUT LEDs;3+5 8
-0008: 2808; -- LOOP: JUMP LOOP
-[0009..07FF] : 0000; -- [empty memory]
+0000: BFFF; -- LOADI -1
+0001: 9873; -- OUT Stride ; Set Stride to -1
+0002: 0819; -- LOAD Count
+0003: 9870; -- OUT Address ; Starting Address is 100
+0004: 9871; -- OUT Data ; Set Data
+0005: 2001; -- SUB 1 ; Decrement AC
+0006: 9872; -- OUT Increment ; Go to previous address
+0007: 4009; -- JZERO Done ; If done setting values exit loop
+0008: 2804; -- JUMP First ; Re-enter Loop
+0009: BFFE; -- LOADI -2
+000A: 9873; -- OUT Stride ; Set Stride to -2
+000B: 0819; -- LOAD Count
+000C: 9870; -- OUT Address ; Starting Address is 100
+000D: 9071; -- IN Data ; Get Data
+000E: 181A; -- ADD Sum ; Add and Store to Sum
+000F: 101A; -- STORE Sum
+0010: 0819; -- LOAD Count
+0011: 2002; -- SUB 2 ; Decrement Count by 2
+0012: 1019; -- STORE Count
+0013: 9872; -- OUT Increment
+0014: 4016; -- JZERO End
+0015: 280D; -- JUMP Second
+0016: 081A; -- LOAD Sum
+0017: 9801; -- OUT LEDs ; LEDs should display 2550
+0018: 2818; -- JUMP LOOP
+0019: 0064; -- Count: DW 100
+001A: 0000; -- Sum: DW 0
+[001B..07FF] : 0000; -- [empty memory]
 END;
