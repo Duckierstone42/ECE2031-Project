@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "11/06/2024 20:10:07"
+-- Generated on "11/07/2024 18:42:29"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          SCOMP_System
 -- 
@@ -37,30 +37,14 @@ ARCHITECTURE SCOMP_System_arch OF SCOMP_System_vhd_vec_tst IS
 SIGNAL clock_50 : STD_LOGIC;
 SIGNAL dbg_AC : STD_LOGIC_VECTOR(15 DOWNTO 0);
 SIGNAL dbg_PC : STD_LOGIC_VECTOR(10 DOWNTO 0);
-SIGNAL HEX0 : STD_LOGIC_VECTOR(6 DOWNTO 0);
-SIGNAL HEX1 : STD_LOGIC_VECTOR(6 DOWNTO 0);
-SIGNAL HEX2 : STD_LOGIC_VECTOR(6 DOWNTO 0);
-SIGNAL HEX3 : STD_LOGIC_VECTOR(6 DOWNTO 0);
-SIGNAL HEX4 : STD_LOGIC_VECTOR(6 DOWNTO 0);
-SIGNAL HEX5 : STD_LOGIC_VECTOR(6 DOWNTO 0);
 SIGNAL KEY0 : STD_LOGIC;
-SIGNAL LEDR : STD_LOGIC_VECTOR(9 DOWNTO 0);
-SIGNAL SW : STD_LOGIC_VECTOR(9 DOWNTO 0);
 SIGNAL TPs : STD_LOGIC_VECTOR(3 DOWNTO 0);
 COMPONENT SCOMP_System
 	PORT (
 	clock_50 : IN STD_LOGIC;
 	dbg_AC : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	dbg_PC : OUT STD_LOGIC_VECTOR(10 DOWNTO 0);
-	HEX0 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX1 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX2 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX3 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX4 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
-	HEX5 : OUT STD_LOGIC_VECTOR(6 DOWNTO 0);
 	KEY0 : IN STD_LOGIC;
-	LEDR : OUT STD_LOGIC_VECTOR(9 DOWNTO 0);
-	SW : IN STD_LOGIC_VECTOR(9 DOWNTO 0);
 	TPs : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
 	);
 END COMPONENT;
@@ -71,15 +55,7 @@ BEGIN
 	clock_50 => clock_50,
 	dbg_AC => dbg_AC,
 	dbg_PC => dbg_PC,
-	HEX0 => HEX0,
-	HEX1 => HEX1,
-	HEX2 => HEX2,
-	HEX3 => HEX3,
-	HEX4 => HEX4,
-	HEX5 => HEX5,
 	KEY0 => KEY0,
-	LEDR => LEDR,
-	SW => SW,
 	TPs => TPs
 	);
 

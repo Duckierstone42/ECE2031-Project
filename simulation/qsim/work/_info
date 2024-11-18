@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 dS:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/simulation/qsim
 Escomp_system
-Z1 w1730941813
+Z1 w1731022952
 Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
 Z3 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
 Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
@@ -20,19 +20,19 @@ Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z10 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
-!i122 16
+!i122 18
 R0
 Z11 8SCOMP.vho
 Z12 FSCOMP.vho
 l0
 L39 1
-V?EDkBUcW[_5bXTW2YN6?j0
-!s100 S>a0i;VIz_QSE?J8P4?_Y0
+Vo>1BdAJfPc:ESZ:TmNWJ52
+!s100 l@fz7a_kIchVBCmPge4Fl2
 Z13 OV;C;2020.1;71
 32
-!s110 1730941815
+!s110 1731022954
 !i10b 1
-Z14 !s108 1730941815.000000
+Z14 !s108 1731022954.000000
 Z15 !s90 -work|work|SCOMP.vho|
 Z16 !s107 SCOMP.vho|
 !i113 1
@@ -48,15 +48,15 @@ R7
 R8
 R9
 R10
-DEx4 work 12 scomp_system 0 22 ?EDkBUcW[_5bXTW2YN6?j0
-!i122 16
-l3263
-L163 43463
-VfOL6fR8lm5dB=38b^`>mG1
-!s100 ePBkW033D1[_OmbV5mhO;2
+DEx4 work 12 scomp_system 0 22 o>1BdAJfPc:ESZ:TmNWJ52
+!i122 18
+l2912
+L93 38005
+VWi6@5;8JL63oY:T>BgMCf0
+!s100 GUKS5AE9CWXOQm]XOPdC10
 R13
 32
-!s110 1730941816
+!s110 1731022955
 !i10b 1
 R14
 R15
@@ -65,10 +65,10 @@ R16
 R17
 R18
 Escomp_system_vhd_vec_tst
-Z19 w1730941807
+Z19 w1731022949
 R8
 R9
-!i122 17
+!i122 19
 R0
 Z20 8base_waveform.vwf.vht
 Z21 Fbase_waveform.vwf.vht
@@ -78,9 +78,9 @@ V:?EzTaN6T^gR:HdYODnzY0
 !s100 T;3g88ZNh<?[V;a`Vj7Kh1
 R13
 32
-Z22 !s110 1730941818
+Z22 !s110 1731022956
 !i10b 1
-Z23 !s108 1730941818.000000
+Z23 !s108 1731022955.000000
 Z24 !s90 -work|work|base_waveform.vwf.vht|
 Z25 !s107 base_waveform.vwf.vht|
 !i113 1
@@ -90,11 +90,11 @@ Ascomp_system_arch
 R8
 R9
 Z26 DEx4 work 24 scomp_system_vhd_vec_tst 0 22 :?EzTaN6T^gR:HdYODnzY0
-!i122 17
-l67
-L34 63
-V@jHFTdkQ7;9@DERI1;YRa3
-!s100 =^@ZDd]XRM3Be6k9No2?J0
+!i122 19
+l51
+L34 39
+VhgK^5K4BSH7_L:PVz6J_G1
+!s100 cL4oH`zPG1XiWV?5i5V`Z2
 R13
 32
 R22

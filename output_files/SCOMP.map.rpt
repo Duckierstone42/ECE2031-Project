@@ -1,5 +1,5 @@
 Analysis & Synthesis report for SCOMP
-Wed Nov 06 20:06:57 2024
+Mon Nov 18 13:39:45 2024
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -23,14 +23,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  15. General Register Statistics
  16. Inverted Register Statistics
  17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Source assignments for SCOMP:inst|altsyncram:altsyncram_component|altsyncram_ga34:auto_generated
+ 18. Source assignments for SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3924:auto_generated
  19. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i
  20. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_0
  21. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_1
  22. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_2
  23. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_3
  24. Source assignments for PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_pll_dps_lcell_comb:lcell_cntsel_int_4
- 25. Source assignments for ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated
+ 25. Source assignments for ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated
  26. Source assignments for sld_signaltap:auto_signaltap_0
  27. Parameter Settings for User Entity Instance: SCOMP:inst|altsyncram:altsyncram_component
  28. Parameter Settings for User Entity Instance: SCOMP:inst|LPM_CLSHIFT:shifter
@@ -38,15 +38,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  30. Parameter Settings for User Entity Instance: PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i
  31. Parameter Settings for User Entity Instance: DIG_IN:inst7|LPM_BUSTRI:IO_BUS
  32. Parameter Settings for User Entity Instance: TIMER:inst4|LPM_BUSTRI:IO_BUS
- 33. Parameter Settings for User Entity Instance: ExternalMemory:inst6|LPM_BUSTRI:IO_BUS
- 34. Parameter Settings for User Entity Instance: ExternalMemory:inst6|altsyncram:MEM_COMPONENT
- 35. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
- 36. altsyncram Parameter Settings by Entity Instance
- 37. Signal Tap Logic Analyzer Settings
- 38. Post-Synthesis Netlist Statistics for Top Partition
- 39. Elapsed Time Per Partition
- 40. Connections to In-System Debugging Instance "auto_signaltap_0"
- 41. Analysis & Synthesis Messages
+ 33. Parameter Settings for User Entity Instance: ExternalMemory:inst6|altsyncram:mem_instance
+ 34. Parameter Settings for Inferred Entity Instance: sld_signaltap:auto_signaltap_0
+ 35. altsyncram Parameter Settings by Entity Instance
+ 36. Signal Tap Logic Analyzer Settings
+ 37. Post-Synthesis Netlist Statistics for Top Partition
+ 38. Elapsed Time Per Partition
+ 39. Connections to In-System Debugging Instance "auto_signaltap_0"
+ 40. Analysis & Synthesis Messages
 
 
 
@@ -73,16 +72,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 06 20:06:56 2024       ;
+; Analysis & Synthesis Status     ; Successful - Mon Nov 18 13:39:45 2024       ;
 ; Quartus Prime Version           ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                   ; SCOMP                                       ;
 ; Top-level Entity Name           ; SCOMP_System                                ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 771                                         ;
+; Total registers                 ; 752                                         ;
 ; Total pins                      ; 95                                          ;
 ; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 1,093,632                                   ;
+; Total block memory bits         ; 45,056                                      ;
 ; Total DSP Blocks                ; 0                                           ;
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
@@ -195,11 +194,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
-;     Processor 5            ;   0.0%      ;
-;     Processors 6-16        ;   0.0%      ;
+;     Processors 2-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -229,15 +224,15 @@ https://fpgasoftware.intel.com/eula.
 ; altrom.inc                                                         ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altrom.inc                                                           ;             ;
 ; altram.inc                                                         ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altram.inc                                                           ;             ;
 ; altdpram.inc                                                       ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altdpram.inc                                                         ;             ;
-; db/altsyncram_ga34.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_ga34.tdf                                             ;             ;
-; custom_mem_test.mif                                                ; yes             ; Auto-Found Memory Initialization File        ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/custom_mem_test.mif                                                ;             ;
+; db/altsyncram_3924.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_3924.tdf                                             ;             ;
+; code_1.mif                                                         ; yes             ; Auto-Found Memory Initialization File        ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/code_1.mif                                                         ;             ;
 ; lpm_clshift.tdf                                                    ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_clshift.tdf                                                      ;             ;
 ; db/lpm_clshift_fuc.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/lpm_clshift_fuc.tdf                                             ;             ;
 ; lpm_bustri.tdf                                                     ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/lpm_bustri.tdf                                                       ;             ;
 ; altera_pll.v                                                       ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v                                                         ;             ;
 ; altera_pll_dps_lcell_comb.v                                        ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll_dps_lcell_comb.v                                          ;             ;
 ; altera_cyclonev_pll.v                                              ; yes             ; Megafunction                                 ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_cyclonev_pll.v                                                ;             ;
-; db/altsyncram_qb04.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_qb04.tdf                                             ;             ;
+; db/altsyncram_9104.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf                                             ;             ;
 ; db/decode_dla.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_dla.tdf                                                  ;             ;
 ; db/decode_61a.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_61a.tdf                                                  ;             ;
 ; db/mux_chb.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/mux_chb.tdf                                                     ;             ;
@@ -288,6 +283,9 @@ https://fpgasoftware.intel.com/eula.
 ; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
 ; db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/ip/sldfd7bd03d/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
 ; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/sld_jtag_hub.vhd                                                     ;             ;
+; db/altsyncram_ga34.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_ga34.tdf                                             ;             ;
+; custom_mem_test.mif                                                ; yes             ; Auto-Found Memory Initialization File        ; custom_mem_test.mif                                                                                                         ;             ;
+; db/altsyncram_qb04.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_qb04.tdf                                             ;             ;
 +--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+-------------+
 
 
@@ -296,20 +294,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+--------------------------+
 ; Resource                                    ; Usage                    ;
 +---------------------------------------------+--------------------------+
-; Estimate of Logic utilization (ALMs needed) ; 619                      ;
+; Estimate of Logic utilization (ALMs needed) ; 547                      ;
 ;                                             ;                          ;
-; Combinational ALUT usage for logic          ; 813                      ;
+; Combinational ALUT usage for logic          ; 716                      ;
 ;     -- 7 input functions                    ; 1                        ;
-;     -- 6 input functions                    ; 197                      ;
-;     -- 5 input functions                    ; 233                      ;
-;     -- 4 input functions                    ; 96                       ;
-;     -- <=3 input functions                  ; 286                      ;
+;     -- 6 input functions                    ; 143                      ;
+;     -- 5 input functions                    ; 197                      ;
+;     -- 4 input functions                    ; 99                       ;
+;     -- <=3 input functions                  ; 276                      ;
 ;                                             ;                          ;
-; Dedicated logic registers                   ; 771                      ;
+; Dedicated logic registers                   ; 752                      ;
 ;                                             ;                          ;
 ; I/O pins                                    ; 95                       ;
 ; Total MLAB memory bits                      ; 0                        ;
-; Total block memory bits                     ; 1093632                  ;
+; Total block memory bits                     ; 45056                    ;
 ;                                             ;                          ;
 ; Total DSP Blocks                            ; 0                        ;
 ;                                             ;                          ;
@@ -318,8 +316,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                          ;
 ; Maximum fan-out node                        ; altera_internal_jtag~TDO ;
 ; Maximum fan-out                             ; 341                      ;
-; Total fan-out                               ; 8958                     ;
-; Average fan-out                             ; 4.63                     ;
+; Total fan-out                               ; 6205                     ;
+; Average fan-out                             ; 3.67                     ;
 +---------------------------------------------+--------------------------+
 
 
@@ -328,15 +326,10 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                      ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |SCOMP_System                                                                                                                           ; 813 (99)            ; 771 (0)                   ; 1093632           ; 0          ; 95   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
-;    |DIG_IN:inst7|                                                                                                                       ; 1 (1)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                                                                                                                                                                                                                                               ; DIG_IN                            ; work         ;
+; |SCOMP_System                                                                                                                           ; 716 (17)            ; 752 (0)                   ; 45056             ; 0          ; 95   ; 0            ; |SCOMP_System                                                                                                                                                                                                                                                                                                                                            ; SCOMP_System                      ; work         ;
+;    |DIG_IN:inst7|                                                                                                                       ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_IN:inst7                                                                                                                                                                                                                                                                                                                               ; DIG_IN                            ; work         ;
 ;    |DIG_OUT:inst21|                                                                                                                     ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|DIG_OUT:inst21                                                                                                                                                                                                                                                                                                                             ; DIG_OUT                           ; work         ;
-;    |ExternalMemory:inst6|                                                                                                               ; 19 (3)              ; 19 (16)                   ; 1048576           ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6                                                                                                                                                                                                                                                                                                                       ; ExternalMemory                    ; work         ;
-;       |altsyncram:MEM_COMPONENT|                                                                                                        ; 16 (0)              ; 3 (0)                     ; 1048576           ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:MEM_COMPONENT                                                                                                                                                                                                                                                                                              ; altsyncram                        ; work         ;
-;          |altsyncram_qb04:auto_generated|                                                                                               ; 16 (0)              ; 3 (3)                     ; 1048576           ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated                                                                                                                                                                                                                                                               ; altsyncram_qb04                   ; work         ;
-;             |decode_61a:rden_decode|                                                                                                    ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated|decode_61a:rden_decode                                                                                                                                                                                                                                        ; decode_61a                        ; work         ;
-;             |decode_dla:decode3|                                                                                                        ; 8 (8)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated|decode_dla:decode3                                                                                                                                                                                                                                            ; decode_dla                        ; work         ;
-;    |HEX_DISP_6:inst9|                                                                                                                   ; 44 (2)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                                                                                                                                                                                                                                           ; HEX_DISP_6                        ; work         ;
+;    |HEX_DISP_6:inst9|                                                                                                                   ; 45 (3)              ; 24 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9                                                                                                                                                                                                                                                                                                                           ; HEX_DISP_6                        ; work         ;
 ;       |HEX_DISP:inst1|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst1                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst2|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst2                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
 ;       |HEX_DISP:inst3|                                                                                                                  ; 7 (7)               ; 4 (4)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|HEX_DISP_6:inst9|HEX_DISP:inst3                                                                                                                                                                                                                                                                                                            ; HEX_DISP                          ; work         ;
@@ -349,11 +342,11 @@ https://fpgasoftware.intel.com/eula.
 ;          |altera_pll:altera_pll_i|                                                                                                      ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i                                                                                                                                                                                                                                                                         ; altera_pll                        ; work         ;
 ;             |altera_cyclonev_pll:cyclonev_pll|                                                                                          ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll                                                                                                                                                                                                                                        ; altera_cyclonev_pll               ; work         ;
 ;                |altera_cyclonev_pll_base:fpll_0|                                                                                        ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0                                                                                                                                                                                                        ; altera_cyclonev_pll_base          ; work         ;
-;    |SCOMP:inst|                                                                                                                         ; 254 (205)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
+;    |SCOMP:inst|                                                                                                                         ; 258 (217)           ; 179 (179)                 ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst                                                                                                                                                                                                                                                                                                                                 ; SCOMP                             ; work         ;
 ;       |altsyncram:altsyncram_component|                                                                                                 ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component                                                                                                                                                                                                                                                                                                 ; altsyncram                        ; work         ;
-;          |altsyncram_ga34:auto_generated|                                                                                               ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_ga34:auto_generated                                                                                                                                                                                                                                                                  ; altsyncram_ga34                   ; work         ;
-;       |lpm_clshift:shifter|                                                                                                             ; 49 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                                                                                                                                                                                                                                             ; lpm_clshift                       ; work         ;
-;          |lpm_clshift_fuc:auto_generated|                                                                                               ; 49 (49)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter|lpm_clshift_fuc:auto_generated                                                                                                                                                                                                                                                                              ; lpm_clshift_fuc                   ; work         ;
+;          |altsyncram_3924:auto_generated|                                                                                               ; 0 (0)               ; 0 (0)                     ; 32768             ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3924:auto_generated                                                                                                                                                                                                                                                                  ; altsyncram_3924                   ; work         ;
+;       |lpm_clshift:shifter|                                                                                                             ; 41 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter                                                                                                                                                                                                                                                                                                             ; lpm_clshift                       ; work         ;
+;          |lpm_clshift_fuc:auto_generated|                                                                                               ; 41 (41)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|SCOMP:inst|lpm_clshift:shifter|lpm_clshift_fuc:auto_generated                                                                                                                                                                                                                                                                              ; lpm_clshift_fuc                   ; work         ;
 ;    |TIMER:inst4|                                                                                                                        ; 33 (33)             ; 16 (16)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|TIMER:inst4                                                                                                                                                                                                                                                                                                                                ; TIMER                             ; work         ;
 ;    |clk_div:inst5|                                                                                                                      ; 27 (27)             ; 22 (22)                   ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|clk_div:inst5                                                                                                                                                                                                                                                                                                                              ; clk_div                           ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 92 (1)              ; 90 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |SCOMP_System|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
@@ -403,15 +396,14 @@ https://fpgasoftware.intel.com/eula.
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                                            ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+---------------------+
-; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size    ; MIF                 ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+---------------------+
-; ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated|ALTSYNCRAM                                                                                                               ; AUTO ; Single Port      ; 65536        ; 16           ; --           ; --           ; 1048576 ; None                ;
-; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_ga34:auto_generated|ALTSYNCRAM                                                                                                                  ; AUTO ; Single Port      ; 2048         ; 16           ; --           ; --           ; 32768   ; custom_mem_test.mif ;
-; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ke84:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4096         ; 3            ; 4096         ; 3            ; 12288   ; None                ;
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+---------+---------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                                 ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+; Name                                                                                                                                                                                                  ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF        ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
+; SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3924:auto_generated|ALTSYNCRAM                                                                                                                  ; AUTO ; Single Port      ; 2048         ; 16           ; --           ; --           ; 32768 ; code_1.mif ;
+; sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram|altsyncram_ke84:auto_generated|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 4096         ; 3            ; 4096         ; 3            ; 12288 ; None       ;
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -570,12 +562,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 771   ;
+; Total registers                              ; 752   ;
 ; Number of registers using Synchronous Clear  ; 152   ;
 ; Number of registers using Synchronous Load   ; 236   ;
 ; Number of registers using Asynchronous Clear ; 263   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 517   ;
+; Number of registers using Clock Enable       ; 501   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -611,15 +603,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; 3:1                ; 99 bits   ; 198 LEs       ; 0 LEs                ; 198 LEs                ; Yes        ; |SCOMP_System|SCOMP:inst|PC_stack[3][7] ;
 ; 12:1               ; 11 bits   ; 88 LEs        ; 22 LEs               ; 66 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|PC[2]          ;
-; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[10]         ;
-; 11:1               ; 6 bits    ; 42 LEs        ; 42 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[15]               ;
-; 11:1               ; 10 bits   ; 70 LEs        ; 70 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[0]                ;
+; 13:1               ; 16 bits   ; 128 LEs       ; 112 LEs              ; 16 LEs                 ; Yes        ; |SCOMP_System|SCOMP:inst|AC[13]         ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 20 LEs               ; 0 LEs                  ; No         ; |SCOMP_System|IO_DATA[3]                ;
 ; 13:1               ; 16 bits   ; 128 LEs       ; 128 LEs              ; 0 LEs                  ; No         ; |SCOMP_System|SCOMP:inst|Add1           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------+
-; Source assignments for SCOMP:inst|altsyncram:altsyncram_component|altsyncram_ga34:auto_generated ;
+; Source assignments for SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3924:auto_generated ;
 +---------------------------------+--------------------+------+------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                 ;
 +---------------------------------+--------------------+------+------------------------------------+
@@ -707,13 +698,13 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------+-------+------+----------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Source assignments for ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated ;
-+---------------------------------+--------------------+------+---------------------------------------+
-; Assignment                      ; Value              ; From ; To                                    ;
-+---------------------------------+--------------------+------+---------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                     ;
-+---------------------------------+--------------------+------+---------------------------------------+
++----------------------------------------------------------------------------------------------------+
+; Source assignments for ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated ;
++---------------------------------+--------------------+------+--------------------------------------+
+; Assignment                      ; Value              ; From ; To                                   ;
++---------------------------------+--------------------+------+--------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                    ;
++---------------------------------+--------------------+------+--------------------------------------+
 
 
 +-------------------------------------------------------+
@@ -768,7 +759,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                     ;
 ; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
 ; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                     ;
-; INIT_FILE                          ; custom_mem_test.mif  ; Untyped                     ;
+; INIT_FILE                          ; code_1.mif           ; Untyped                     ;
 ; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                     ;
 ; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer              ;
 ; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                     ;
@@ -781,7 +772,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                     ;
 ; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer              ;
 ; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                     ;
-; CBXI_PARAMETER                     ; altsyncram_ga34      ; Untyped                     ;
+; CBXI_PARAMETER                     ; altsyncram_3924      ; Untyped                     ;
 +------------------------------------+----------------------+-----------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -1077,74 +1068,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ExternalMemory:inst6|LPM_BUSTRI:IO_BUS ;
-+----------------+-------+------------------------------------------------------------+
-; Parameter Name ; Value ; Type                                                       ;
-+----------------+-------+------------------------------------------------------------+
-; LPM_WIDTH      ; 16    ; Signed Integer                                             ;
-+----------------+-------+------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ExternalMemory:inst6|altsyncram:MEM_COMPONENT ;
-+------------------------------------+----------------------+--------------------------------+
-; Parameter Name                     ; Value                ; Type                           ;
-+------------------------------------+----------------------+--------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                        ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                     ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                   ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                   ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                 ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                        ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                        ;
-; WIDTH_A                            ; 16                   ; Signed Integer                 ;
-; WIDTHAD_A                          ; 16                   ; Signed Integer                 ;
-; NUMWORDS_A                         ; 65536                ; Signed Integer                 ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                        ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                        ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                        ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                        ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                        ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                        ;
-; WIDTH_B                            ; 1                    ; Signed Integer                 ;
-; WIDTHAD_B                          ; 1                    ; Signed Integer                 ;
-; NUMWORDS_B                         ; 0                    ; Signed Integer                 ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                        ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                        ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                        ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                        ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                        ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                        ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                        ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                        ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                        ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                        ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                        ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                        ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                 ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                 ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                        ;
-; BYTE_SIZE                          ; 8                    ; Signed Integer                 ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                        ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                        ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                        ;
-; INIT_FILE                          ; UNUSED               ; Untyped                        ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                        ;
-; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                 ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                        ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                        ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                        ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                        ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                        ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                        ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                        ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                        ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                 ;
-; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                        ;
-; CBXI_PARAMETER                     ; altsyncram_qb04      ; Untyped                        ;
-+------------------------------------+----------------------+--------------------------------+
++-------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ExternalMemory:inst6|altsyncram:mem_instance ;
++------------------------------------+----------------------+-------------------------------+
+; Parameter Name                     ; Value                ; Type                          ;
++------------------------------------+----------------------+-------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                       ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                    ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                  ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                  ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                       ;
+; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                       ;
+; WIDTH_A                            ; 16                   ; Signed Integer                ;
+; WIDTHAD_A                          ; 16                   ; Signed Integer                ;
+; NUMWORDS_A                         ; 65536                ; Signed Integer                ;
+; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                       ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                       ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                       ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                       ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                       ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                       ;
+; WIDTH_B                            ; 1                    ; Signed Integer                ;
+; WIDTHAD_B                          ; 1                    ; Signed Integer                ;
+; NUMWORDS_B                         ; 0                    ; Signed Integer                ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                       ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                       ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                       ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                       ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                       ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                       ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                       ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                       ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                       ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                       ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                       ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                       ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Signed Integer                ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                       ;
+; BYTE_SIZE                          ; 8                    ; Signed Integer                ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                       ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
+; INIT_FILE                          ; UNUSED               ; Untyped                       ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                       ;
+; MAXIMUM_DEPTH                      ; 0                    ; Signed Integer                ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                       ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                       ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                       ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                       ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                       ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                       ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                       ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
+; WIDTH_ECCSTATUS                    ; 3                    ; Signed Integer                ;
+; DEVICE_FAMILY                      ; Cyclone V            ; Untyped                       ;
+; CBXI_PARAMETER                     ; altsyncram_9104      ; Untyped                       ;
++------------------------------------+----------------------+-------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1214,35 +1195,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                          ;
-+-------------------------------------------+-----------------------------------------------+
-; Name                                      ; Value                                         ;
-+-------------------------------------------+-----------------------------------------------+
-; Number of entity instances                ; 2                                             ;
-; Entity Instance                           ; SCOMP:inst|altsyncram:altsyncram_component    ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                   ;
-;     -- WIDTH_A                            ; 16                                            ;
-;     -- NUMWORDS_A                         ; 2048                                          ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                  ;
-;     -- WIDTH_B                            ; 1                                             ;
-;     -- NUMWORDS_B                         ; 0                                             ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                        ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                  ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                          ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                     ;
-; Entity Instance                           ; ExternalMemory:inst6|altsyncram:MEM_COMPONENT ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                   ;
-;     -- WIDTH_A                            ; 16                                            ;
-;     -- NUMWORDS_A                         ; 65536                                         ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                  ;
-;     -- WIDTH_B                            ; 1                                             ;
-;     -- NUMWORDS_B                         ; 0                                             ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                        ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                  ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                          ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                     ;
-+-------------------------------------------+-----------------------------------------------+
++------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                         ;
++-------------------------------------------+----------------------------------------------+
+; Name                                      ; Value                                        ;
++-------------------------------------------+----------------------------------------------+
+; Number of entity instances                ; 2                                            ;
+; Entity Instance                           ; SCOMP:inst|altsyncram:altsyncram_component   ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
+;     -- WIDTH_A                            ; 16                                           ;
+;     -- NUMWORDS_A                         ; 2048                                         ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
+;     -- WIDTH_B                            ; 1                                            ;
+;     -- NUMWORDS_B                         ; 0                                            ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                       ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                 ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
+; Entity Instance                           ; ExternalMemory:inst6|altsyncram:mem_instance ;
+;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
+;     -- WIDTH_A                            ; 16                                           ;
+;     -- NUMWORDS_A                         ; 65536                                        ;
+;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
+;     -- WIDTH_B                            ; 1                                            ;
+;     -- NUMWORDS_B                         ; 0                                            ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                       ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                 ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
++-------------------------------------------+----------------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -1259,36 +1240,36 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------------+-----------------------+
 ; Type                        ; Count                 ;
 +-----------------------------+-----------------------+
-; arriav_ff                   ; 280                   ;
+; arriav_ff                   ; 261                   ;
 ;     CLR                     ; 68                    ;
-;     ENA                     ; 57                    ;
+;     ENA                     ; 41                    ;
 ;     ENA CLR                 ; 10                    ;
 ;     ENA SCLR                ; 11                    ;
 ;     ENA SLD                 ; 99                    ;
 ;     SCLR                    ; 20                    ;
-;     plain                   ; 15                    ;
-; arriav_lcell_comb           ; 489                   ;
+;     plain                   ; 12                    ;
+; arriav_lcell_comb           ; 392                   ;
 ;     arith                   ; 63                    ;
 ;         1 data inputs       ; 46                    ;
 ;         2 data inputs       ; 1                     ;
 ;         5 data inputs       ; 16                    ;
-;     normal                  ; 426                   ;
+;     normal                  ; 329                   ;
 ;         0 data inputs       ; 1                     ;
 ;         1 data inputs       ; 7                     ;
-;         2 data inputs       ; 14                    ;
-;         3 data inputs       ; 61                    ;
-;         4 data inputs       ; 59                    ;
-;         5 data inputs       ; 148                   ;
-;         6 data inputs       ; 136                   ;
+;         2 data inputs       ; 15                    ;
+;         3 data inputs       ; 50                    ;
+;         4 data inputs       ; 62                    ;
+;         5 data inputs       ; 112                   ;
+;         6 data inputs       ; 82                    ;
 ; boundary_port               ; 96                    ;
 ; cyclonev_fractional_pll     ; 1                     ;
 ; cyclonev_pll_output_counter ; 1                     ;
 ; cyclonev_pll_reconfig       ; 1                     ;
 ; cyclonev_pll_refclk_select  ; 1                     ;
-; stratixv_ram_block          ; 144                   ;
+; stratixv_ram_block          ; 16                    ;
 ;                             ;                       ;
 ; Max LUT depth               ; 5.50                  ;
-; Average LUT depth           ; 2.67                  ;
+; Average LUT depth           ; 2.49                  ;
 +-----------------------------+-----------------------+
 
 
@@ -1297,7 +1278,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1354,7 +1335,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Wed Nov 06 20:06:04 2024
+    Info: Processing started: Mon Nov 18 13:39:16 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off SCOMP -c SCOMP
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
@@ -1388,8 +1369,8 @@ Info (12021): Found 2 design units, including 1 entities, in source file pll_mai
 Info (12021): Found 1 design units, including 1 entities, in source file pll_main/pll_main_0002.v
     Info (12023): Found entity 1: PLL_main_0002 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/PLL_main/PLL_main_0002.v Line: 2
 Info (12021): Found 2 design units, including 1 entities, in source file externalmemory.vhd
-    Info (12022): Found design unit 1: ExternalMemory-a File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 28
-    Info (12023): Found entity 1: ExternalMemory File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 17
+    Info (12022): Found design unit 1: ExternalMemory-Behavioral File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 113
+    Info (12023): Found entity 1: ExternalMemory File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 102
 Info (12127): Elaborating entity "SCOMP_System" for the top level hierarchy
 Info (12128): Elaborating entity "SCOMP" for hierarchy "SCOMP:inst"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 70
@@ -1415,7 +1396,7 @@ Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_compon
     Info (12134): Parameter "indata_aclr_a" = "UNUSED"
     Info (12134): Parameter "indata_aclr_b" = "NONE"
     Info (12134): Parameter "indata_reg_b" = "CLOCK1"
-    Info (12134): Parameter "init_file" = "custom_mem_test.mif"
+    Info (12134): Parameter "init_file" = "code_1.mif"
     Info (12134): Parameter "init_file_layout" = "PORT_A"
     Info (12134): Parameter "maximum_depth" = "0"
     Info (12134): Parameter "numwords_a" = "2048"
@@ -1445,9 +1426,9 @@ Info (12133): Instantiated megafunction "SCOMP:inst|altsyncram:altsyncram_compon
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ga34.tdf
-    Info (12023): Found entity 1: altsyncram_ga34 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_ga34.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_ga34" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component|altsyncram_ga34:auto_generated" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_3924.tdf
+    Info (12023): Found entity 1: altsyncram_3924 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_3924.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_3924" for hierarchy "SCOMP:inst|altsyncram:altsyncram_component|altsyncram_3924:auto_generated" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12128): Elaborating entity "LPM_CLSHIFT" for hierarchy "SCOMP:inst|LPM_CLSHIFT:shifter" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 97
 Info (12130): Elaborated megafunction instantiation "SCOMP:inst|LPM_CLSHIFT:shifter" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 97
 Info (12133): Instantiated megafunction "SCOMP:inst|LPM_CLSHIFT:shifter" with the following parameter: File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/SCOMP.vhd Line: 97
@@ -1725,9 +1706,48 @@ Info (10041): Inferred latch for "IO_COUNT[14]" at TIMER.vhd(59) File: S:/Georgi
 Info (10041): Inferred latch for "IO_COUNT[15]" at TIMER.vhd(59) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/TIMER.vhd Line: 59
 Info (12128): Elaborating entity "clk_div" for hierarchy "clk_div:inst5"
 Info (12128): Elaborating entity "ExternalMemory" for hierarchy "ExternalMemory:inst6"
-Info (12128): Elaborating entity "altsyncram" for hierarchy "ExternalMemory:inst6|altsyncram:MEM_COMPONENT" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 45
-Info (12130): Elaborated megafunction instantiation "ExternalMemory:inst6|altsyncram:MEM_COMPONENT" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 45
-Info (12133): Instantiated megafunction "ExternalMemory:inst6|altsyncram:MEM_COMPONENT" with the following parameter: File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 45
+Warning (10036): Verilog HDL or VHDL warning at ExternalMemory.vhd(118): object "mem_data_out" assigned a value but never read File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 118
+Warning (10492): VHDL Process Statement warning at ExternalMemory.vhd(133): signal "IO_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at ExternalMemory.vhd(137): signal "IO_DATA" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 137
+Warning (10631): VHDL Process Statement warning at ExternalMemory.vhd(124): inferring latch(es) for signal or variable "address", which holds its previous value in one or more paths through the process File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Warning (10631): VHDL Process Statement warning at ExternalMemory.vhd(124): inferring latch(es) for signal or variable "mem_write_enable", which holds its previous value in one or more paths through the process File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Warning (10631): VHDL Process Statement warning at ExternalMemory.vhd(124): inferring latch(es) for signal or variable "mem_data_in", which holds its previous value in one or more paths through the process File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[0]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[1]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[2]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[3]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[4]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[5]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[6]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[7]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[8]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[9]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[10]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[11]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[12]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[13]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[14]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_data_in[15]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "mem_write_enable" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[0]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[1]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[2]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[3]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[4]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[5]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[6]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[7]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[8]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[9]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[10]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[11]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[12]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[13]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[14]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (10041): Inferred latch for "address[15]" at ExternalMemory.vhd(124) File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 124
+Info (12128): Elaborating entity "altsyncram" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
+Info (12130): Elaborated megafunction instantiation "ExternalMemory:inst6|altsyncram:mem_instance" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
+Info (12133): Instantiated megafunction "ExternalMemory:inst6|altsyncram:mem_instance" with the following parameter: File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/ExternalMemory.vhd Line: 160
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1778,18 +1798,18 @@ Info (12133): Instantiated megafunction "ExternalMemory:inst6|altsyncram:MEM_COM
     Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK1"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qb04.tdf
-    Info (12023): Found entity 1: altsyncram_qb04 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_qb04.tdf Line: 34
-Info (12128): Elaborating entity "altsyncram_qb04" for hierarchy "ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9104.tdf
+    Info (12023): Found entity 1: altsyncram_9104 File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 34
+Info (12128): Elaborating entity "altsyncram_9104" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dla.tdf
     Info (12023): Found entity 1: decode_dla File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_dla.tdf Line: 23
-Info (12128): Elaborating entity "decode_dla" for hierarchy "ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated|decode_dla:decode3" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_qb04.tdf Line: 44
+Info (12128): Elaborating entity "decode_dla" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|decode_dla:decode3" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 44
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_61a.tdf
     Info (12023): Found entity 1: decode_61a File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/decode_61a.tdf Line: 23
-Info (12128): Elaborating entity "decode_61a" for hierarchy "ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated|decode_61a:rden_decode" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_qb04.tdf Line: 45
+Info (12128): Elaborating entity "decode_61a" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|decode_61a:rden_decode" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 45
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_chb.tdf
     Info (12023): Found entity 1: mux_chb File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/mux_chb.tdf Line: 23
-Info (12128): Elaborating entity "mux_chb" for hierarchy "ExternalMemory:inst6|altsyncram:MEM_COMPONENT|altsyncram_qb04:auto_generated|mux_chb:mux2" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_qb04.tdf Line: 46
+Info (12128): Elaborating entity "mux_chb" for hierarchy "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|mux_chb:mux2" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 46
 Info (12128): Elaborating entity "HEX_DISP_6" for hierarchy "HEX_DISP_6:inst9"
 Info (12128): Elaborating entity "HEX_DISP" for hierarchy "HEX_DISP_6:inst9|HEX_DISP:inst1"
 Info (12128): Elaborating entity "DIG_OUT" for hierarchy "DIG_OUT:inst21"
@@ -1816,7 +1836,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr
     Info (12023): Found entity 1: cmpr_99c File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/cmpr_99c.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2024.11.06.20:06:34 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2024.11.18.13:39:32 Progress: Loading sldfd7bd03d/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -1847,6 +1867,135 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|cntsel_temp[1]" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 425
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|cntsel_temp[0]" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 425
         Warning (14320): Synthesized away node "PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|gnd" File: s:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altera_pll.v Line: 427
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a0" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 47
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a1" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 69
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a2" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 91
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a3" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 113
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a4" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 135
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a5" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 157
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a6" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 179
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a7" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 201
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a8" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 223
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a9" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 245
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a10" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 267
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a11" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 289
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a12" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 311
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a13" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 333
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a14" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 355
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a15" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 377
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a16" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 399
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a17" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 421
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a18" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 443
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a19" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 465
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a20" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 487
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a21" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 509
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a22" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 531
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a23" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 553
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a24" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 575
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a25" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 597
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a26" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 619
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a27" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 641
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a28" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 663
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a29" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 685
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a30" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 707
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a31" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 729
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a32" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 751
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a33" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 773
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a34" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 795
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a35" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 817
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a36" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 839
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a37" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 861
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a38" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 883
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a39" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 905
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a40" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 927
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a41" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 949
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a42" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 971
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a43" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 993
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a44" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1015
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a45" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1037
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a46" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1059
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a47" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1081
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a48" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1103
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a49" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1125
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a50" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1147
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a51" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1169
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a52" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1191
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a53" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1213
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a54" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1235
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a55" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1257
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a56" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1279
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a57" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1301
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a58" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1323
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a59" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1345
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a60" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1367
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a61" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1389
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a62" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1411
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a63" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1433
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a64" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1455
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a65" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1477
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a66" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1499
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a67" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1521
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a68" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1543
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a69" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1565
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a70" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1587
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a71" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1609
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a72" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1631
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a73" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1653
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a74" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1675
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a75" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1697
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a76" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1719
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a77" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1741
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a78" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1763
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a79" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1785
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a80" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1807
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a81" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1829
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a82" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1851
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a83" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1873
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a84" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1895
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a85" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1917
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a86" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1939
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a87" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1961
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a88" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 1983
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a89" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2005
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a90" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2027
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a91" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2049
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a92" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2071
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a93" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2093
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a94" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2115
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a95" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2137
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a96" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2159
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a97" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2181
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a98" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2203
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a99" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2225
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a100" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2247
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a101" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2269
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a102" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2291
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a103" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2313
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a104" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2335
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a105" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2357
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a106" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2379
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a107" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2401
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a108" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2423
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a109" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2445
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a110" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2467
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a111" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2489
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a112" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2511
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a113" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2533
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a114" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2555
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a115" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2577
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a116" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2599
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a117" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2621
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a118" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2643
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a119" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2665
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a120" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2687
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a121" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2709
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a122" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2731
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a123" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2753
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a124" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2775
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a125" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2797
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a126" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2819
+        Warning (14320): Synthesized away node "ExternalMemory:inst6|altsyncram:mem_instance|altsyncram_9104:auto_generated|ram_block1a127" File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/db/altsyncram_9104.tdf Line: 2841
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13048): Converted tri-state node "IO_DATA[15]" into a selector File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/HEX_DISP.vhd Line: 25
     Warning (13048): Converted tri-state node "IO_DATA[14]" into a selector File: S:/Georgia Tech/Georgia Tech Fall 2024/ECE  2031/Project/HEX_DISP.vhd Line: 25
@@ -1874,15 +2023,15 @@ Info (17049): 15 registers lost all their fanouts during netlist optimizations.
 Critical Warning (35025): Partially connected in-system debug instance "auto_signaltap_0" to 34 of its 39 required data inputs, trigger inputs, acquisition clocks, and dynamic pins.  There were 0 illegal, 0 inaccessible, and 5 missing sources or connections.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 17 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1570 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1324 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 84 output pins
-    Info (21061): Implemented 1319 logic cells
-    Info (21064): Implemented 147 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 41 warnings
-    Info: Peak virtual memory: 4999 megabytes
-    Info: Processing ended: Wed Nov 06 20:06:57 2024
-    Info: Elapsed time: 00:00:53
-    Info: Total CPU time (on all processors): 00:00:46
+    Info (21061): Implemented 1201 logic cells
+    Info (21064): Implemented 19 RAM segments
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 176 warnings
+    Info: Peak virtual memory: 4987 megabytes
+    Info: Processing ended: Mon Nov 18 13:39:45 2024
+    Info: Elapsed time: 00:00:29
+    Info: Total CPU time (on all processors): 00:00:30
 
 

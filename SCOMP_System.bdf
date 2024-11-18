@@ -1065,17 +1065,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 304 936)
 )
 (connector
-	(pt 520 936)
-	(pt 536 936)
-	(bus)
-)
-(connector
-	(text "IO_DATA[15..0]" (rect 570 920 643 937)(font "Intel Clear" ))
-	(pt 536 936)
-	(pt 656 936)
-	(bus)
-)
-(connector
 	(text "SWITCH_EN" (rect 1050 264 1107 281)(font "Intel Clear" ))
 	(pt 1040 280)
 	(pt 1120 280)
@@ -1178,10 +1167,6 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 264 88)
-	(pt 336 88)
-)
-(connector
 	(pt 328 128)
 	(pt 336 128)
 )
@@ -1201,19 +1186,28 @@ https://fpgasoftware.intel.com/eula.
 	(pt 576 168)
 )
 (connector
-	(text "clock_50" (rect 202 984 244 1001)(font "Intel Clear" ))
+	(pt 264 88)
+	(pt 336 88)
+)
+(connector
+	(text "clock_50" (rect 234 984 276 1001)(font "Intel Clear" ))
+	(pt 224 1000)
 	(pt 304 1000)
-	(pt 192 1000)
+)
+(connector
+	(text "IO_DATA[15..0]" (rect 602 920 675 937)(font "Intel Clear" ))
+	(pt 536 936)
+	(pt 688 936)
+	(bus)
 )
 (junction (pt 536 280))
-(junction (pt 536 936))
 (text "The daughterboard test points." (rect 1272 1096 1454 1115)(font "Intel Clear" (font_size 8)))
 (text "Can be useful for testing using the oscilloscope." (rect 1272 1120 1549 1139)(font "Intel Clear" (font_size 8)))
 (text "Convenient place to put your new peripheral (some relevant wires have been placed for you)." (rect 192 840 738 859)(font "Intel Clear" (font_size 8)))
 (title_block
 	(rect 1112 1264 1480 1384)
 	(section (rect 0 24 368 48)(text "COMPANY" (rect 2 0 57 12)(font "Arial" ))(text "GaTech DDL" (rect 56 2 170 20)(font "Arial" (font_size 12)))(border))
-	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Wed Nov 06 20:05:53 2024" (rect 56 3 240 19)(font "Arial" (font_size 10)))(date)(border))
+	(section (rect 0 96 240 120)(text "DATE" (rect 2 0 30 12)(font "Arial" ))(text "Mon Nov 18 13:33:48 2024" (rect 56 3 237 19)(font "Arial" (font_size 10)))(date)(border))
 	(section (rect 0 48 368 72)(text "DESIGNER" (rect 2 0 59 12)(font "Arial" ))(text "Kevin Johnson, Tom Collins" (rect 56 2 286 20)(font "Arial" (font_size 12)))(border))
 	(section (rect 0 72 280 96)(text "NUMBER" (rect 2 0 49 12)(font "Arial" ))(text "1.00" (rect 56 1 85 17)(font "Arial" (font_size 10)))(border))
 	(section (rect 310 96 368 120)(text "OF" (rect 10 0 25 12)(font "Arial" ))(text "1" (rect 34 4 42 20)(font "Arial" (font_size 10))))

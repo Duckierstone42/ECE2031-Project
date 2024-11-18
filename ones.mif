@@ -1,0 +1,9 @@
+WIDTH=16;               -- Width of the memory word
+DEPTH=65536;            -- Total number of memory addresses
+
+ADDRESS_RADIX=UNS;      -- Address radix (UNS = Unsigned decimal)
+DATA_RADIX=BIN;         -- Data radix (BIN = Binary)
+
+CONTENT BEGIN
+    [0..65535] : 1111111111111111;
+END;
