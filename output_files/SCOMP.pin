@@ -164,7 +164,7 @@ LEDR[1]                      : AB23      : output : 3.3-V LVTTL       :         
 VCCIO5A                      : AB24      : power  :                   : 3.3V    : 5A        :                
 RESERVED_INPUT               : AB25      :        :                   :         : 5A        :                
 RESERVED_INPUT               : AB26      :        :                   :         : 5A        :                
-clock_51                     : AB27      : input  : 3.3-V LVTTL       :         : 5B        : N              
+RESERVED_INPUT               : AB27      :        :                   :         : 5B        :                
 SW[2]                        : AB28      : input  : 3.3-V LVTTL       :         : 5B        : Y              
 GND                          : AB29      : gnd    :                   :         :           :                
 SW[0]                        : AB30      : input  : 3.3-V LVTTL       :         : 5B        : Y              

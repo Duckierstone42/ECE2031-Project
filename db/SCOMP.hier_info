@@ -18,7 +18,6 @@ SW[6] => DIG_IN:inst7.DI[6]
 SW[7] => DIG_IN:inst7.DI[7]
 SW[8] => DIG_IN:inst7.DI[8]
 SW[9] => DIG_IN:inst7.DI[9]
-clock_51 => ExternalMemory:inst6.CLOCK
 HEX1[0] <= segments[7].DB_MAX_OUTPUT_PORT_TYPE
 HEX1[1] <= segments[8].DB_MAX_OUTPUT_PORT_TYPE
 HEX1[2] <= segments[9].DB_MAX_OUTPUT_PORT_TYPE
@@ -1443,7 +1442,7 @@ result[15] <= result[15].DB_MAX_OUTPUT_PORT_TYPE
 refclk => PLL_main_0002:pll_main_inst.refclk
 rst => PLL_main_0002:pll_main_inst.rst
 outclk_0 <= PLL_main_0002:pll_main_inst.outclk_0
-outclk_2 <= PLL_main_0002:pll_main_inst.outclk_2
+outclk_1 <= PLL_main_0002:pll_main_inst.outclk_1
 locked <= PLL_main_0002:pll_main_inst.locked
 
 
@@ -1451,8 +1450,7 @@ locked <= PLL_main_0002:pll_main_inst.locked
 refclk => refclk.IN1
 rst => rst.IN1
 outclk_0 <= altera_pll:altera_pll_i.outclk
-outclk_1 <= <GND>
-outclk_2 <= altera_pll:altera_pll_i.outclk
+outclk_1 <= altera_pll:altera_pll_i.outclk
 locked <= altera_pll:altera_pll_i.locked
 
 
@@ -1541,7 +1539,6 @@ adjpllin => adjpllin.IN1
 cclk => cclk.IN1
 outclk[0] <= altera_cyclonev_pll:cyclonev_pll.divclk
 outclk[1] <= altera_cyclonev_pll:cyclonev_pll.divclk
-outclk[2] <= altera_cyclonev_pll:cyclonev_pll.divclk
 fboutclk <= altera_cyclonev_pll:cyclonev_pll.extclk
 locked <= altera_cyclonev_pll:cyclonev_pll.lock
 phase_done <= <GND>
@@ -1628,7 +1625,6 @@ extclk_out[0] <= <GND>
 extclk_out[1] <= <GND>
 cascade_out[0] <= altera_cyclonev_pll:cyclonev_pll.cascade_out
 cascade_out[1] <= altera_cyclonev_pll:cyclonev_pll.cascade_out
-cascade_out[2] <= altera_cyclonev_pll:cyclonev_pll.cascade_out
 zdbfbclk <> <GND>
 
 
@@ -2681,10 +2677,8 @@ lvdsclk[0] <= <GND>
 lvdsclk[1] <= <GND>
 divclk[0] <= counter[0].output_counter.O_DIVCLK
 divclk[1] <= counter[1].output_counter.O_DIVCLK
-divclk[2] <= counter[2].output_counter.O_DIVCLK
 cascade_out[0] <= counter[0].output_counter.O_CASCADEOUT
 cascade_out[1] <= counter[1].output_counter.O_CASCADEOUT
-cascade_out[2] <= counter[2].output_counter.O_CASCADEOUT
 
 
 |SCOMP_System|PLL_main:inst1|PLL_main_0002:pll_main_inst|altera_pll:altera_pll_i|altera_cyclonev_pll:cyclonev_pll|altera_cyclonev_pll_base:fpll_0
@@ -3989,11 +3983,41 @@ clock_4Hz <= clock_4Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 |SCOMP_System|ExternalMemory:inst6
 RESETN => ~NO_FANOUT~
-CS_ADDR => process_0.IN0
+CS_ADDR => ADDRESS[0].ENA
+CS_ADDR => ADDRESS[1].ENA
+CS_ADDR => ADDRESS[2].ENA
+CS_ADDR => ADDRESS[3].ENA
+CS_ADDR => ADDRESS[4].ENA
+CS_ADDR => ADDRESS[5].ENA
+CS_ADDR => ADDRESS[6].ENA
+CS_ADDR => ADDRESS[7].ENA
+CS_ADDR => ADDRESS[8].ENA
+CS_ADDR => ADDRESS[9].ENA
+CS_ADDR => ADDRESS[10].ENA
+CS_ADDR => ADDRESS[11].ENA
+CS_ADDR => ADDRESS[12].ENA
+CS_ADDR => ADDRESS[13].ENA
+CS_ADDR => ADDRESS[14].ENA
+CS_ADDR => ADDRESS[15].ENA
 CS_DATA => comb.IN0
 CS_DATA => comb.IN0
 SCOMP_OUT => comb.IN1
-SCOMP_OUT => process_0.IN1
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
+SCOMP_OUT => ADDRESS.OUTPUTSELECT
 SCOMP_OUT => comb.IN1
 CLOCK => altsyncram:MEM_COMPONENT.clock0
 CLOCK => ADDRESS[0].CLK

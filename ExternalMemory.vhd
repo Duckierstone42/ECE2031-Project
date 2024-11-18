@@ -41,6 +41,8 @@ ARCHITECTURE a OF ExternalMemory IS
         tridata  => IO_DATA -- driving the IO_DATA bus
     );
 	 
+	 
+	
 	 -- Use Intel Altsyncram to create a memory component
 	 MEM_COMPONENT: altsyncram 
 		GENERIC MAP (
@@ -73,8 +75,11 @@ ARCHITECTURE a OF ExternalMemory IS
     PROCESS(clock)
     BEGIN
         IF RISING_EDGE(clock) THEN
-				IF CS_ADDR = '1'  and SCOMP_OUT = '1' THEN
-					ADDRESS <= IO_DATA; --Save address in data register
+				IF CS_ADDR = '1'  THEN
+					IF SCOMP_OUT = '1' THEN
+						ADDRESS <= IO_DATA; --Save address in data register
+					END IF;
+					
 				END IF;
 				
 --				IF CS_DATA = '1' THEN

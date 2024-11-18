@@ -216,10 +216,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "clock_51",
-					"strict" : false
-				},
-				{
 					"name" : "SW[1]",
 					"strict" : false
 				},
